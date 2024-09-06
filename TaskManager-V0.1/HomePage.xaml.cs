@@ -4,7 +4,7 @@ public partial class HomePage : ContentPage
 {
 	public HomePage()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
 
     private void groupButton(object sender, EventArgs e)
