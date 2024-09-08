@@ -4,16 +4,42 @@ public partial class GroupPage : ContentPage
 {
 	public GroupPage()
 	{
-        InitializeComponent();
+		InitializeComponent();
 	}
 
-    private void Add (object sender, EventArgs e)
+	public class Title
 	{
-		DisplayAlert("New Group", "Successfully Added", "Back");
+		public string Name_Of_Groups { get; set;  }
 	}
 
-    private void Back(object sender, EventArgs e)
+    private void Add(object sender, EventArgs e)
     {
-        DisplayAlert("Go back to the last page", "Hi", "Go");
+        // App.Current.GroupPage = new AddGroup();
     }
+
+	 /* private void GroupNum1(object sender, EventArgs e)
+	{
+		DisplayAlert("Go to group 1", "Hi", "Go");
+
+	}
+
+	private void GroupNum2(object sender, EventArgs e)
+	{
+		DisplayAlert("Go to group 2", "Hi", "Go");
+	}
+
+	private void GrougNum3(object sender, EventArgs e)
+	{
+		DisplayAlert("Go to group 3", "Hi", "Go");
+	}
+
+	private void GrougNum4(object sender, EventArgs e)
+	{
+		DisplayAlert("Go to group 4", "Hi", "Go");
+	}
+
+	private void GroupNumN(object sender, EventArgs e)
+	{
+		DisplayAlert("Go to group n", "Hi", "Go");
+	} */
 }

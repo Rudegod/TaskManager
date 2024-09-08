@@ -6,4 +6,9 @@ public partial class PeoplePage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void AddUser(object sender, EventArgs e)
+    {
+
+    }
 }

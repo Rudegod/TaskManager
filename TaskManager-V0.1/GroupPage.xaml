@@ -4,64 +4,83 @@
              x:Class="TaskManager_V0._1.GroupPage"
               Title="GroupPage">
 
-    <StackLayout Background="#2A3759">
-        <Button
-            BackgroundColor="#B7CB99"
-            TextColor="Black"
-            Text="Back"
-            Margin="45, 30, 0, 0"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Clicked="Back"
-            >
-
-        </Button>
-        <Border
-            Margin="10, 50, 10, 15"
-            WidthRequest="300"
-            HeightRequest="120"
-            Background="#778FD2"
-            >
-            <Label
-                Padding="10, 25, 10, 35"
-                Text="Group Num 1 &#10; Members : Mrs T, Mr Z" >
-            </Label>
-        </Border>
-        <Border
-            Margin="0, 15, 0, 15"
-            WidthRequest="300"
-            HeightRequest="120"
-            Background="#778FD2"
-            >
-            <Label
+    <ScrollView>
+        <StackLayout Background="#2A3759">
+            <Button 
+                Margin="45, 13, 0, 0"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Text="Add group"
+                BackgroundColor="#B7CB99"
                 TextColor="Black"
-                Padding="10, 25, 10, 40"
-                Text="Group Num 2 &#10; Members : Mr X, Mrs Y" >
-            </Label>
-        </Border>
-        <Border
-            Margin="0, 15, 0, 15"
-            WidthRequest="300"
-            HeightRequest="120"
-            Background="#778FD2"
+                Clicked="Add"
             >
-            <Label 
-                Padding="10, 25, 10, 35"
-                Text="Group Num 3 &#10; Members : Mrs K, Mr O" >
-            </Label>
-        </Border>
-        <Button 
-            Margin="0, 0, 50, 30"
-            VerticalOptions="EndAndExpand"
-            HorizontalOptions="End"
-            Text="Add group"
-            BackgroundColor="#B7CB99"
-            TextColor="Black"
-            Clicked="Add"
+            </Button>
+
+            <Button 
+                Margin="10, 30, 10, 15"
+                WidthRequest="300"
+                HeightRequest="120"
+                Background="#778FD2"
+                TextColor="Black"
+                Padding="0, 0, 115, 60"
+                FontSize="25"
+                Text="Group Num 1"
+                Clicked="GroupNum1"
+            >
+            </Button>
+            
+            <Button
+                Margin="0, 15, 0, 15"
+                WidthRequest="300"
+                HeightRequest="120"
+                Background="#778FD2"
+                TextColor="Black"
+                FontSize="25"
+                Padding="0, 0, 115, 60"
+                Text="Group Num 2"
+                Clicked="GroupNum2"
                 >
-        </Button>
+            </Button>
 
-        
-    </StackLayout>
+            <Button
+                Margin="0, 15, 0, 15"
+                Text="Group Num 3"
+                WidthRequest="300"
+                HeightRequest="120"
+                FontSize="25"
+                Padding="0, 0, 115, 60"
+                Background="#778FD2"
+                TextColor="Black"
+                Clicked="GrougNum3"
+                >
+            </Button>
 
+            <Button
+                Margin="0, 15, 0, 15"
+                WidthRequest="300"
+                HeightRequest="120"
+                Background="#778FD2"
+                TextColor="Black"
+                FontSize="25"
+                Padding="0, 0, 115, 60"
+                Text="Group Num 4"
+                Clicked="GrougNum4"
+                >
+            </Button>
+
+            <Button
+                Margin="0, 15, 0, 15"
+                WidthRequest="300"
+                HeightRequest="120"
+                Background="#778FD2"
+                FontSize="25"
+                Padding="0, 0, 115, 60"
+                TextColor="Black"
+                Text="Group Num 5"
+                Clicked="GroupNumN"
+                >
+            </Button>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -6,4 +6,49 @@ public partial class TaskPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void AddTask(object sender, EventArgs e)
+    {
+        // App.Current.TaskPage = new AddTask();
+    }
+
+    private void Task1(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task2(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task3(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task4(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task5(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task6(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task7(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Task8(object sender, EventArgs e)
+    {
+
+    }
 }
