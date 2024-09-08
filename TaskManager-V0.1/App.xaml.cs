@@ -7,6 +7,7 @@
             InitializeComponent();
 
             MainPage = new MainPage();
+            //this is a change
         }
     }
 }
