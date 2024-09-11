@@ -12,7 +12,7 @@
             FontSize="48"
             FontAttributes="Bold"
             HorizontalOptions="Center"
-            Margin="0, 40, 0, 80"/>
+            Margin="0, 100, 0, 80"/>
 
         <Button
             Text="Group"

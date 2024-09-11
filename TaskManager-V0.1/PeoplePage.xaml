@@ -6,63 +6,16 @@
 
     <ScrollView>
         <StackLayout Background="#2A3759" Orientation="Vertical" Spacing="30" >
-            <Frame
-                CornerRadius="250"
-                WidthRequest="200"
-                BackgroundColor="Wheat"
-                >
-                <Image Source="task.png"
-                   WidthRequest="250"
-                   HeightRequest="150"
-                   Background="Wheat"
-                       />
-            </Frame>
-            
             <Button
-                CornerRadius="50"
-                BackgroundColor="#3d5220"
+                CornerRadius="30"
+                BackgroundColor="#B7CB99"
                 Text="Add User"
-                HorizontalOptions="Start"
-                Margin="20, 0, 0, 0"
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                Margin="45, 13, 0, 0"
                 WidthRequest="90"
-                Clicked="AddUser"
+                Clicked="AddUserButton"
                 />
-            <Label
-                Text="person N1 &#x0a;Group Name : " BackgroundColor="Wheat"
-                HeightRequest="75"
-                TextColor="Black"
-                Padding="25 , 15 , 0 , 0"
-                >
-            </Label>
-            <Label
-                Text="person N1 &#x0a;Group Name : " BackgroundColor="Wheat"
-                HeightRequest="75"
-                TextColor="Black"
-                Padding="25 , 15 , 0 , 0"
-                >
-            </Label>
-            <Label
-                Text="person N1 &#x0a;Group Name : " BackgroundColor="Wheat"
-                HeightRequest="75"
-                TextColor="Black"
-                Padding="25 , 15 , 0 , 0"
-                >
-            </Label>
-
-            <Label
-                Text="person N1 &#x0a;Group Name : " BackgroundColor="Wheat"
-                HeightRequest="75"
-                TextColor="Black"
-                Padding="25 , 15 , 0 , 0"
-                >
-            </Label>
-            <Label
-                Text="person N1 &#x0a;Group Name : " BackgroundColor="Wheat"
-                HeightRequest="75"
-                TextColor="Black"
-                Padding="25 , 15 , 0 , 0"
-                >
-            </Label>
         </StackLayout>
     </ScrollView>
 </ContentPage>

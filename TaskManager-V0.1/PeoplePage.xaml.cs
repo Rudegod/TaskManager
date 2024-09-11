@@ -7,8 +7,8 @@ public partial class PeoplePage : ContentPage
 		InitializeComponent();
 	}
 
-    private void AddUser(object sender, EventArgs e)
+    private void AddUserButton(object sender, EventArgs e)
     {
-		App.Current.MainPage = new NavigationPage(new AddUserPage());
+        Navigation.PushAsync(new AddUserPage());
     }
 }

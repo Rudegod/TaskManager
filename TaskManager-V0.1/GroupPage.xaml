@@ -6,80 +6,16 @@
 
     <ScrollView>
         <StackLayout Background="#2A3759">
-            <Button 
+            <Button
+                CornerRadius="30"
                 Margin="45, 13, 0, 0"
                 VerticalOptions="Start"
                 HorizontalOptions="Start"
                 Text="Add group"
                 BackgroundColor="#B7CB99"
                 TextColor="Black"
-                Clicked="Add"
+                Clicked="AddButton"
             >
-            </Button>
-
-            <Button 
-                Margin="10, 30, 10, 15"
-                WidthRequest="300"
-                HeightRequest="120"
-                Background="#778FD2"
-                TextColor="Black"
-                Padding="0, 0, 115, 60"
-                FontSize="25"
-                Text="Group Num 1"
-                Clicked="GroupNum1"
-            >
-            </Button>
-            
-            <Button
-                Margin="0, 15, 0, 15"
-                WidthRequest="300"
-                HeightRequest="120"
-                Background="#778FD2"
-                TextColor="Black"
-                FontSize="25"
-                Padding="0, 0, 115, 60"
-                Text="Group Num 2"
-                Clicked="GroupNum2"
-                >
-            </Button>
-
-            <Button
-                Margin="0, 15, 0, 15"
-                Text="Group Num 3"
-                WidthRequest="300"
-                HeightRequest="120"
-                FontSize="25"
-                Padding="0, 0, 115, 60"
-                Background="#778FD2"
-                TextColor="Black"
-                Clicked="GrougNum3"
-                >
-            </Button>
-
-            <Button
-                Margin="0, 15, 0, 15"
-                WidthRequest="300"
-                HeightRequest="120"
-                Background="#778FD2"
-                TextColor="Black"
-                FontSize="25"
-                Padding="0, 0, 115, 60"
-                Text="Group Num 4"
-                Clicked="GrougNum4"
-                >
-            </Button>
-
-            <Button
-                Margin="0, 15, 0, 15"
-                WidthRequest="300"
-                HeightRequest="120"
-                Background="#778FD2"
-                FontSize="25"
-                Padding="0, 0, 115, 60"
-                TextColor="Black"
-                Text="Group Num 5"
-                Clicked="GroupNumN"
-                >
             </Button>
         </StackLayout>
     </ScrollView>

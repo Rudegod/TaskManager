@@ -8,101 +8,14 @@
     <ScrollView>
         <VerticalStackLayout Background="#2A3759">
             <Button
-                Margin="45, 8, 0, 0"
+                CornerRadius="30"
+                Margin="45, 13, 0, 0"
                 VerticalOptions="Start"
                 HorizontalOptions="StartAndExpand"
-                Text="Add Task"
                 TextColor="Black"
                 BackgroundColor="#B7CB99"
-                Clicked="AddTask"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #1"
-                Margin="45, 25, 45, 5"
-                Clicked="Task1"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #2"
-                Margin="45, 25, 45, 5"
-                Clicked="Task2"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #3"
-                Margin="45, 25, 45, 5"
-                Clicked="Task3"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #4"
-                Margin="45, 25, 45, 5"
-                Clicked="Task4"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #5"
-                Margin="45, 25, 45, 5"
-                Clicked="Task5"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #6"
-                Margin="45, 25, 45, 5"
-                Clicked="Task6"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #7"
-                Margin="45, 25, 45, 5"
-                Clicked="Task7"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
-                >
-            </Button>
-
-            <Button
-                Text="Task N #8"
-                Margin="45, 25, 45, 5"
-                Clicked="Task8"
-                TextColor="White"
-                BackgroundColor="#778fd2"
-                WidthRequest="305"
-                HeightRequest="70"
+                Text="Add Task"
+                Clicked="AddTaskButton"
                 >
             </Button>
         </VerticalStackLayout>
