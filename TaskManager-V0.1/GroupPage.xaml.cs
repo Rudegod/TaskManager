@@ -14,13 +14,13 @@ public partial class GroupPage : ContentPage
 
     private void Add(object sender, EventArgs e)
     {
-        // App.Current.GroupPage = new AddGroup();
+		App.Current.MainPage = new NavigationPage(new AddGroupPage());
     }
 
-	 /* private void GroupNum1(object sender, EventArgs e)
+	 /*
+	private void GroupNum1(object sender, EventArgs e)
 	{
 		DisplayAlert("Go to group 1", "Hi", "Go");
-
 	}
 
 	private void GroupNum2(object sender, EventArgs e)
@@ -41,5 +41,6 @@ public partial class GroupPage : ContentPage
 	private void GroupNumN(object sender, EventArgs e)
 	{
 		DisplayAlert("Go to group n", "Hi", "Go");
-	} */
+	}
+	*/
 }

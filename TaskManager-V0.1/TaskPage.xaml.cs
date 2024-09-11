@@ -9,7 +9,7 @@ public partial class TaskPage : ContentPage
 
     private void AddTask(object sender, EventArgs e)
     {
-        // App.Current.TaskPage = new AddTask();
+        App.Current.MainPage = new NavigationPage(new AddTaskPage());
     }
 
     private void Task1(object sender, EventArgs e)

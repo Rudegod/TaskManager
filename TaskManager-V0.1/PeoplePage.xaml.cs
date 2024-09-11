@@ -9,6 +9,6 @@ public partial class PeoplePage : ContentPage
 
     private void AddUser(object sender, EventArgs e)
     {
-
+		App.Current.MainPage = new NavigationPage(new AddUserPage());
     }
 }
