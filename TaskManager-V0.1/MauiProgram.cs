@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace TaskManager_V0._1
 {
@@ -8,6 +9,7 @@ namespace TaskManager_V0._1
         {
             var builder = MauiApp.CreateBuilder();
             builder
+                .UseMauiCommunityToolkit()
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {

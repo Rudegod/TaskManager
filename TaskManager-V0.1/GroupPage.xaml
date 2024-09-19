@@ -2,8 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.GroupPage"
-             Title="GroupPage">
-    <ListView
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    
+    <StackLayout>
+        <Label
+            Text="groups"
+            FontAttributes="Bold"
+            HorizontalOptions="CenterAndExpand"
+            TextColor="Black"
+            FontSize="30"
+            />
         
-        />
+        <Button
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="0, 0, 20, 20"
+            Clicked="addButton"
+            />
+
+    </StackLayout>
 </ContentPage>

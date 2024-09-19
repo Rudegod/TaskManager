@@ -25,6 +25,7 @@
             <Entry
                 x:Name="userNameEntry"
                 Placeholder="User Name"
+                TextColor="white"
                 HorizontalTextAlignment="Center"
                 FontSize="24"
                 HeightRequest="50"
@@ -41,6 +42,7 @@
             <Entry
                 x:Name="passwordEntry"
                 Placeholder="Password"
+                TextColor="White"
                 HorizontalTextAlignment="Center"
                 IsPassword="True"
                 FontSize="24"
