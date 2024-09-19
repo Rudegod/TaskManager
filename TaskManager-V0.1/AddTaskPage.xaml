@@ -2,11 +2,389 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.AddTaskPage"
-             Title="Add Task Page">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Add Task Page"
+             BackgroundColor="#2A3759">
+
+        <ScrollView>
+            <StackLayout>
+
+                <!-- Assign to a person PopUp -->
+                <Button 
+                    Text="Assign to a person"
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    BackgroundColor="#B7CB99"
+                    TextColor="Black"
+                    FontSize="22"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="AssignShowButton"
+                    />
+
+                <!-- Popup6 Definition -->
+                <ContentView
+                    x:Name="Popup6"
+                    IsVisible="False"
+                    BackgroundColor="#778FD2"
+                    Padding="40"
+                    HorizontalOptions="Fill"
+                    Margin="0, 0, 0, 0"
+                    >
+
+                    <StackLayout>
+                        <Label
+                            Text="AssigntoAperson"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"
+                            Margin="0, 0, 0, 15"
+                            />
+                        <Label
+                            Text="here should be the list of all members..."
+                            FontSize="15"
+                            TextColor="Black"
+                            />
+                        <Button
+                            Text="Close"
+                            TextColor="White"
+                            CornerRadius="20"
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#431D32"
+                            Clicked="AssignCloseButton"
+                            />
+                    </StackLayout>
+                </ContentView>
+
+                <!-- Deadline Entry -->
+                <Frame
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    BackgroundColor="#B7CB99">
+                    <DatePicker
+                        x:Name="DateOfBirthPicker"
+                        TextColor="Black"
+                        FontSize="22"
+                        HeightRequest="50"
+                        WidthRequest="210"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </Frame>
+                
+                <!-- Cost Entry -->
+                <Frame
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    BackgroundColor="#B7CB99">
+                    <Entry
+                        x:Name="cost"
+                        Placeholder="Cost"
+                        PlaceholderColor="Black"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"
+                        FontSize="22"
+                        HeightRequest="50"
+                        WidthRequest="210"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </Frame>
+                
+                <!-- Prerequisites PopUp -->
+                <Button 
+                    Text="Prerequisites"
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    BackgroundColor="#B7CB99"
+                    TextColor="Black"
+                    FontSize="22"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="PreShowButton"
+                    />
+
+                <!-- Popup Definition -->
+                <ContentView
+                    x:Name="Popup"
+                    IsVisible="False"
+                    BackgroundColor="#778FD2"
+                    Padding="40"
+                    HorizontalOptions="Fill"
+                    Margin="0, 0, 0, 0"
+                    >
+                    
+                    <StackLayout>
+                        <Label
+                            Text="Prerequisites Page"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"
+                            Margin="0, 0, 0, 15"
+                            />
+                        <Label
+                            Text="here should be the list of all tasks"
+                            FontSize="15"
+                            TextColor="Black"
+                            />
+                        <Button
+                            Text="Close"
+                            TextColor="White"
+                            CornerRadius="20"
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#431D32"
+                            Clicked="PreCloseButton"
+                            />
+                    </StackLayout>
+                </ContentView>
+                
+                <!-- Couple PopUp -->
+                <Button 
+                    Text="Couple"
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    BackgroundColor="#B7CB99"
+                    TextColor="Black"
+                    FontSize="22"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="CouShowButton"
+                    />
+
+                <!-- Popup2 Definition -->
+                <ContentView
+                    x:Name="Popup2"
+                    IsVisible="False"
+                    BackgroundColor="#778FD2"
+                    Padding="40"
+                    HorizontalOptions="Fill"
+                    Margin="0, 0, 0, 0"
+                    >
+
+                    <StackLayout>
+                        <Label
+                            Text="Couple Page"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"
+                            Margin="0, 0, 0, 15"
+                            />
+                        <Label
+                            Text="here should be the list of all tasks..."
+                            FontSize="15"
+                            TextColor="Black"
+                            />
+                        <Button
+                            Text="Close"
+                            TextColor="White"
+                            CornerRadius="20"
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#431D32"
+                            Clicked="CouCloseButton"
+                            />
+                    </StackLayout>
+                </ContentView>
+
+                <!-- Manager PopUp -->
+                <Button 
+                    Text="Manager"
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    BackgroundColor="#B7CB99"
+                    TextColor="Black"
+                    FontSize="22"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="ManagerShowButton"
+                    />
+
+                <!-- Popup3 Definition -->
+                <ContentView
+                    x:Name="Popup3"
+                    IsVisible="False"
+                    BackgroundColor="#778FD2"
+                    Padding="40"
+                    HorizontalOptions="Fill"
+                    Margin="0, 0, 0, 0"
+                    >
+
+                    <StackLayout>
+                        <Label
+                            Text="Couple Page"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"
+                            Margin="0, 0, 0, 15"
+                            />
+                        <Label
+                            Text="here should be the list of all members..."
+                            FontSize="15"
+                            TextColor="Black"
+                            />
+                        <Button
+                            Text="Close"
+                            TextColor="White"
+                            CornerRadius="20"
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#431D32"
+                            Clicked="ManagerCloseButton"
+                            />
+                    </StackLayout>
+                </ContentView>
+
+                <!-- Previous PopUp -->
+                <Button 
+                    Text="Previous Task"
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    BackgroundColor="#B7CB99"
+                    TextColor="Black"
+                    FontSize="22"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="PreviousShowButton"
+                    />
+
+                <!-- Popup4 Definition -->
+                <ContentView
+                    x:Name="Popup4"
+                    IsVisible="False"
+                    BackgroundColor="#778FD2"
+                    Padding="40"
+                    HorizontalOptions="Fill"
+                    Margin="0, 0, 0, 0"
+                    >
+
+                    <StackLayout>
+                        <Label
+                            Text="PreviousTask"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"
+                            Margin="0, 0, 0, 15"
+                            />
+                        <Label
+                            Text="here should be the list of all members..."
+                            FontSize="15"
+                            TextColor="Black"
+                            />
+                        <Button
+                            Text="Close"
+                            TextColor="White"
+                            CornerRadius="20"
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#431D32"
+                            Clicked="PreviousCloseButton"
+                            />
+                    </StackLayout>
+                </ContentView>
+
+                <!-- NextTask PopUp -->
+                <Button 
+                    Text="Next Task"
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    BackgroundColor="#B7CB99"
+                    TextColor="Black"
+                    FontSize="22"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="NextTaskShowButton"
+                    />
+
+                <!-- Popup5 Definition -->
+                <ContentView
+                    x:Name="Popup5"
+                    IsVisible="False"
+                    BackgroundColor="#778FD2"
+                    Padding="40"
+                    HorizontalOptions="Fill"
+                    Margin="0, 0, 0, 0"
+                    >
+
+                    <StackLayout>
+                        <Label
+                            Text="NextTask"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"
+                            Margin="0, 0, 0, 15"
+                            />
+                        <Label
+                            Text="here should be the list of all tasks..."
+                            FontSize="15"
+                            TextColor="Black"
+                            />
+                        <Button
+                            Text="Close"
+                            TextColor="White"
+                            CornerRadius="20"
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#431D32"
+                            Clicked="NextTaskCloseButton"
+                            />
+                    </StackLayout>
+                </ContentView>
+
+                <!-- Dec.. Entry -->
+                <Frame
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    BackgroundColor="#B7CB99">
+                    <Entry
+                        x:Name="Description"
+                        Placeholder="Description"
+                        PlaceholderColor="Black"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"
+                        FontSize="22"
+                        WidthRequest="210"
+                        HeightRequest="50"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </Frame>
+
+                <!-- Priority Entry -->
+                <Frame
+                    Margin="0, 15, 0, 15"
+                    CornerRadius="35"
+                    WidthRequest="280"
+                    HeightRequest="55"
+                    BackgroundColor="#B7CB99">
+                    <Entry
+                        x:Name="Priority"
+                        Placeholder="Priority"
+                        PlaceholderColor="Black"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"
+                        FontSize="22"
+                        HeightRequest="50"
+                        WidthRequest="210"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </Frame>
+
+                <!-- Ok Button -->
+                <!-- <Button
+                    Text="OK"
+                    Margin="0, 0, 45, 15"
+                    CornerRadius="30"
+                    TextColor="Black"
+                    FontSize="Body"
+                    BackgroundColor="#778FD2"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="OKButton"
+                    /> -->
+        </StackLayout>
+        </ScrollView>
 </ContentPage>

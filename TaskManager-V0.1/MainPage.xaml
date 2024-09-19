@@ -4,7 +4,6 @@
              x:Class="TaskManager_V0._1.MainPage"
              BackgroundColor="#778FD2">
 
-
     <StackLayout>
         <Label
             Text="Task Manager"
@@ -33,6 +32,7 @@
                 WidthRequest="260"
                 HorizontalOptions="CenterAndExpand"/>
         </Frame>
+        
         <Frame
             Margin="0, 25, 0, 105"
             CornerRadius="35"
@@ -57,7 +57,7 @@
             CornerRadius="35"
             WidthRequest="318"
             HeightRequest="60"
-            Text="Login"
+            Text="Send Code via SMS"
             TextColor="Black"
             FontSize="26"
             FontAttributes="Bold"

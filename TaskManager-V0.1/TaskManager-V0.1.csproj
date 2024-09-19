@@ -57,6 +57,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="MyPopupApp\**" />
+	  <Compile Remove="MyPopupApp\**" />
+	  <EmbeddedResource Remove="MyPopupApp\**" />
+	  <MauiCss Remove="MyPopupApp\**" />
+	  <MauiXaml Remove="MyPopupApp\**" />
+	  <None Remove="MyPopupApp\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.3" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -68,6 +79,15 @@
 	  </Compile>
 	  <Compile Update="AddGroupPage.xaml.cs">
 	    <DependentUpon>AddGroupPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="PopUpPage3.xaml.cs">
+	    <DependentUpon>PopUpPage3.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="PopUpPage.xaml.cs">
+	    <DependentUpon>PopUpPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="PopUpPage2.xaml.cs">
+	    <DependentUpon>PopUpPage2.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -96,15 +116,37 @@
 	  <MauiXaml Update="AddGroupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="NewPage1.xaml">
+	  <MauiXaml Update="PopUpPage3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PopUpPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PeoplePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="PopUpPage2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PopUpPage4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PopUpPage5.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PopUpPage6.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SmsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="TaskPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EditorConfigFiles Remove="C:\Users\LENOVO\Downloads\mahdieh\test\TaskManager-V0.1\NewFolder\.editorconfig" />
 	</ItemGroup>
 
 </Project>

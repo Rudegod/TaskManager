@@ -16,7 +16,7 @@
 
             if (username == tempUsername && password == tempPassword)
             {
-                App.Current.MainPage = new NavigationPage(new HomePage());
+                App.Current.MainPage = new NavigationPage(new SmsPage());
             }
             else
             {
@@ -24,11 +24,9 @@
             }
 
         }
-
         private void forgotPasswordButton(object sender, EventArgs e)
         {
 
         }
     }
-
 }

@@ -7,11 +7,6 @@ public partial class HomePage : ContentPage
         InitializeComponent();
 	}
 
-    private void groupButton(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new GroupPage());
-    }
-
     private void peopleButton(object sender, EventArgs e)
     {
         Navigation.PushAsync(new PeoplePage());
