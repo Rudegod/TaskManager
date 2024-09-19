@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.TaskPage"
+             Title="TaskPage"
+             BackgroundColor="#778fd2">
+
+    <ScrollView>
+        <VerticalStackLayout  Padding="20" Background="#778FD2">
+            <Button
+                CornerRadius="30"
+                Margin="45, 13, 0, 0"
+                VerticalOptions="Start"
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                BackgroundColor="#B7CB99"
+                Text="Add Task"
+                Clicked="AddTaskButton"
+                >
+            </Button>
+
+            <CollectionView
+                x:Name="TasksListView"
+                SelectionMode="Multiple"
+                SelectionChangedCommand="{Binding MultiselectionDependedTasks}"
+                SelectionChangedCommandParameter="{Binding SelectedItems , Source={x:Reference TasksListView}}" 
+                ItemsSource="{Binding DependentTasks}"
+                SelectedItems="{Binding SelectedDependentTasks}" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate >
+                        <Label Text="hi" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label Text="Users List" Margin="10 , 10 ,10 ,35" FontSize="24" FontAttributes="Bold"/>
+            <ListView x:Name="TasksListView" Background="#778FD2">
+                <!-- Define item template for tasks -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding TaskName}" Detail="{Binding DueDate}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
