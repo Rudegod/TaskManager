@@ -2,63 +2,65 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.ProfiePage"
-             BackgroundColor="#2A3759">
-    <ScrolView>
-        <StackLayout>
-            <Label
-            Text="Home"
-            TextColor="#FFFFFF"
-            FontSize="48"
-            FontAttributes="Bold"
-            HorizontalOptions="Center"
-            Margin="0, 100, 0, 80"/>
+             Title="ProfilePage"
+             BackgroundColor="#F5f5f5"
+             >
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <!-- Profile Picture -->
+            <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150">
+                <Image Source="dotnet_bot.png"/>
+            </Frame>
 
-            <Button
-            Text="People"
-            BackgroundColor="#B7CB99"
-            TextColor="#000000"
-            FontSize="35"
-            FontAttributes="Bold"
-            CornerRadius="171"
-            WidthRequest="358"
-            HeightRequest="70"
-            Margin="0, 30, 0, 0"
-            Clicked="peopleButton"/>
+            <!-- User Name -->
+            <Label Text="Erfan Habibi"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
 
-            <Button
-            Text="Domain"
-            BackgroundColor="#B7CB99"
-            TextColor="#000000"
-            FontSize="35"
-            FontAttributes="Bold"
-            CornerRadius="171"
-            WidthRequest="358"
-            HeightRequest="70"
-            Margin="0, 30, 0, 0"
-            Clicked="domainButton"/>
+            <!-- User Bio -->
+            <Label Text="Software Developer "
+               FontSize="15"
+               HorizontalOptions="Center"
+               TextColor="#666666"
+               HorizontalTextAlignment="Center" />
 
-            <Button
-            Text="Task"
-            BackgroundColor="#B7CB99"
-            TextColor="#000000"
-            FontSize="35"
-            FontAttributes="Bold"
-            CornerRadius="171"
-            WidthRequest="358"
-            HeightRequest="70"
-            Margin="0, 30, 0, 20"
-            Clicked="taskButton"/>
-            <Button
-            Text="Profile"
-            BackgroundColor="#B7CB99"
-            TextColor="#000000"
-            FontSize="35"
-            FontAttributes="Bold"
-            CornerRadius="171"
-            WidthRequest="358"
-            HeightRequest="70"
-            Margin="0, 30, 0, 20"
-            Clicked="ProfileButton"/>
+            <!-- Action Buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Button Text="Edit Profile" 
+                    BackgroundColor="#007AFF" 
+                    TextColor="White" 
+                    CornerRadius="20" 
+                    WidthRequest="120"/>
+            </StackLayout>
+
+            <!-- Divider -->
+            <BoxView HeightRequest="1" Color="#D3D3D3" />
+
+            <!-- Additional Info -->
+            <Label Text="Email: erfan@gmail.com"
+               FontSize="16"
+               HorizontalOptions="Start" />
+
+            <Label Text="Phone: 09303999827"
+               FontSize="16"
+               HorizontalOptions="Start" />
+
+            <Label Text="Groups :"
+               FontSize="16"
+               HorizontalOptions="StartAndExpand"/>
+
+            <Button Text="Group1: "
+                WidthRequest="100"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Group2 "
+                WidthRequest="100"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
-    </ScrolView>
+    </ScrollView>
 </ContentPage>
