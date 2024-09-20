@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.ProfiePage"
+             BackgroundColor="#2A3759">
+    <ScrolView>
+        <StackLayout>
+            <Label
+            Text="Home"
+            TextColor="#FFFFFF"
+            FontSize="48"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Margin="0, 100, 0, 80"/>
+
+            <Button
+            Text="People"
+            BackgroundColor="#B7CB99"
+            TextColor="#000000"
+            FontSize="35"
+            FontAttributes="Bold"
+            CornerRadius="171"
+            WidthRequest="358"
+            HeightRequest="70"
+            Margin="0, 30, 0, 0"
+            Clicked="peopleButton"/>
+
+            <Button
+            Text="Domain"
+            BackgroundColor="#B7CB99"
+            TextColor="#000000"
+            FontSize="35"
+            FontAttributes="Bold"
+            CornerRadius="171"
+            WidthRequest="358"
+            HeightRequest="70"
+            Margin="0, 30, 0, 0"
+            Clicked="domainButton"/>
+
+            <Button
+            Text="Task"
+            BackgroundColor="#B7CB99"
+            TextColor="#000000"
+            FontSize="35"
+            FontAttributes="Bold"
+            CornerRadius="171"
+            WidthRequest="358"
+            HeightRequest="70"
+            Margin="0, 30, 0, 20"
+            Clicked="taskButton"/>
+            <Button
+            Text="Profile"
+            BackgroundColor="#B7CB99"
+            TextColor="#000000"
+            FontSize="35"
+            FontAttributes="Bold"
+            CornerRadius="171"
+            WidthRequest="358"
+            HeightRequest="70"
+            Margin="0, 30, 0, 20"
+            Clicked="ProfileButton"/>
+        </StackLayout>
+    </ScrolView>
+</ContentPage>
