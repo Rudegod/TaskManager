@@ -14,18 +14,6 @@
             Margin="0, 40, 0, 80"/>
 
         <Button
-            Text="Group"
-            BackgroundColor="#D9D9D9"
-            TextColor="#000000"
-            FontSize="35"
-            FontAttributes="Bold"
-            CornerRadius="171"
-            WidthRequest="358"
-            HeightRequest="70"
-            Margin="0, 30, 0, 0"
-            Clicked="groupButton"/>
-        
-        <Button
             Text="People"
             BackgroundColor="#D9D9D9"
             TextColor="#000000"

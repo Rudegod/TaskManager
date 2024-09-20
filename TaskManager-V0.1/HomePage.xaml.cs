@@ -1,5 +1,4 @@
 using Microsoft.Maui.ApplicationModel;
-using WebKit;
 
 namespace TaskManager_V0._1;
 
@@ -35,6 +34,6 @@ public partial class HomePage : ContentPage
     }
     private void ProfileButton(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new ProfilePage());
+        Navigation.PushModalAsync(new ProfiePage());
     }
 }

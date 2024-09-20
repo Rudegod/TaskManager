@@ -6,4 +6,14 @@ public partial class ProfiePage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void GroupMnager(object sender, EventArgs e)
+    {
+        GroupPopup.IsVisible = true;
+    }
+
+    private void CloseButton(object sender, EventArgs e)
+    {
+        
+    }
 }

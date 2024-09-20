@@ -50,11 +50,31 @@
                FontSize="16"
                HorizontalOptions="StartAndExpand"/>
 
-            <Button Text="Group1: "
+            <Button 
+                Text="Group1 "
                 WidthRequest="100"
                 FontAttributes="Bold"
                 FontSize="16"
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                Clicked="GroupMnager"    
+                />
+            <ContentView
+                x:Name="GroupPopup"
+                IsVisible="False"
+                >
+                <StackLayout>
+                    <Label
+                        Text="Couple"/>
+                    <Label 
+                        Text="something to just find out "/>
+                    <Button
+                        x:Name="ClosePopup"
+                        Text="Close"
+                        Clicked="CloseButton"
+                        />
+                </StackLayout>
+                
+            </ContentView>
 
             <Button Text="Group2 "
                 WidthRequest="100"
