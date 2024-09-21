@@ -7,11 +7,10 @@ namespace TaskManager_V0._1;
 
 public partial class MemberPage : ContentPage
 {
-    public ObservableCollection<Member> members = new ObservableCollection<Member>();
     public MemberPage()
 	{
 		InitializeComponent();
-        membersList.ItemsSource = members;
+        membersList.ItemsSource = MemberData.members;
         //BindingContext = this;
     }
 
@@ -24,7 +23,7 @@ public partial class MemberPage : ContentPage
     public void addMember(object sender, PopupClosedEventArgs e)
     {
         if(Member.f)
-            members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
+            MemberData.members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
                 MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
     }
 
