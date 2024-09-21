@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Views;
 using System.Collections.ObjectModel;
 using System.Security.Cryptography.X509Certificates;
@@ -18,6 +19,10 @@ public partial class MemberPage : ContentPage
 	{
         var popup = new addMemberPopup();
         this.ShowPopup(popup);
+        popup.Closed += addMember;
+    }
+    public void addMember(object sender, PopupClosedEventArgs e)
+    {
         members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
             MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
     }
