@@ -1,3 +1,5 @@
+using CommunityToolkit.Maui.Views;
+
 namespace TaskManager_V0._1;
 
 public partial class ProfiePage : ContentPage
@@ -7,13 +9,9 @@ public partial class ProfiePage : ContentPage
 		InitializeComponent();
 	}
 
-    private void GroupMnager(object sender, EventArgs e)
+    private void GroupPopUp(object sender, EventArgs e)
     {
-        GroupPopup.IsVisible = true;
-    }
-
-    private void CloseButton(object sender, EventArgs e)
-    {
-        
+        var Popup = new GroupDetailsPopUp();
+        this.ShowPopupAsync(Popup);
     }
 }

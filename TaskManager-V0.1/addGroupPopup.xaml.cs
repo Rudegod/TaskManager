@@ -1,5 +1,4 @@
 using CommunityToolkit.Maui.Views;
-using CommunityToolkit.Maui.Views;
 
 namespace TaskManager_V0._1;
 

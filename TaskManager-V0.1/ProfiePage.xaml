@@ -56,26 +56,8 @@
                 FontAttributes="Bold"
                 FontSize="16"
                 HorizontalOptions="CenterAndExpand" 
-                Clicked="GroupMnager"    
+                Clicked="GroupPopUp"    
                 />
-            <ContentView
-                x:Name="GroupPopup"
-                IsVisible="False"
-                >
-                <StackLayout>
-                    <Label
-                        Text="Couple"/>
-                    <Label 
-                        Text="something to just find out "/>
-                    <Button
-                        x:Name="ClosePopup"
-                        Text="Close"
-                        Clicked="CloseButton"
-                        />
-                </StackLayout>
-                
-            </ContentView>
-
             <Button Text="Group2 "
                 WidthRequest="100"
                 FontAttributes="Bold"
