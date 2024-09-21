@@ -23,8 +23,9 @@ public partial class MemberPage : ContentPage
     }
     public void addMember(object sender, PopupClosedEventArgs e)
     {
-        members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
-            MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
+        if(Member.f)
+            members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
+                MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
     }
 
 }
