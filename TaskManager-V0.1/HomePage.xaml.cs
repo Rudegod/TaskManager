@@ -9,7 +9,7 @@ public partial class HomePage : ContentPage
 
     private void peopleButton(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new PeoplePage());
+        Navigation.PushAsync(new MemberPage());
     }
 
     private void domainButton(object sender, EventArgs e)
