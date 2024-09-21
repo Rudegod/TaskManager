@@ -127,9 +127,6 @@
 	  <MauiXaml Update="PopUpPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PeoplePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="PopUpPage2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
