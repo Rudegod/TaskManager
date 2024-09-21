@@ -19,4 +19,9 @@ public partial class ProfiePage : ContentPage
         var Popup2 = new GroupDetailsPopUp2();
         this.ShowPopupAsync(Popup2);
     }
+
+    private void EditProfileButton(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync( new EditProfilePage());
+    }
 }
