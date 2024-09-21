@@ -62,7 +62,9 @@
                 WidthRequest="100"
                 FontAttributes="Bold"
                 FontSize="16"
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                Clicked="GroupPopUp2"
+                />
         </StackLayout>
     </ScrollView>
 </ContentPage>

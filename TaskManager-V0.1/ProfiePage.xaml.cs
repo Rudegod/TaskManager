@@ -11,7 +11,12 @@ public partial class ProfiePage : ContentPage
 
     private void GroupPopUp(object sender, EventArgs e)
     {
-        var Popup = new GroupDetailsPopUp();
+        var Popup = new GroupDetailsPopup();
         this.ShowPopupAsync(Popup);
+    }
+    private void GroupPopUp2(object sender, EventArgs e)
+    {
+        var Popup2 = new GroupDetailsPopUp2();
+        this.ShowPopupAsync(Popup2);
     }
 }
