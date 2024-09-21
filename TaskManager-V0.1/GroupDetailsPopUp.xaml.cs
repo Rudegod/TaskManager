@@ -8,4 +8,9 @@ public partial class GroupDetailsPopup : Popup
     {
         InitializeComponent();
     }
+
+    private void FirstTask(object sender, EventArgs e)
+    {
+        
+    }
 }

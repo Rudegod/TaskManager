@@ -21,24 +21,34 @@
                     Padding="10"
                     FontSize="20"
                     Text="Members :"
-                    TextTransform="Uppercase"
                     />
                 <Label
                     Padding="10"
                     Text="Erfan || Mahdieh || Yazdan "
                     />
             </StackLayout>
-            
-            <StackLayout Margin="20" BackgroundColor="Wheat" HeightRequest="100" >
+
+            <StackLayout Margin="20" BackgroundColor="Transparent" HeightRequest="100" >
                 <Label
                     Padding="10"
-                    FontSize="20"
-                    Text="Members :"
-                    TextTransform="Uppercase"
+                    FontSize="24"
+                    Text="Tasks :"
                     />
-                <Label
-                    Padding="10"
-                    Text="Erfan || Mahdieh || Yazdan "
+                <Button
+                    CharacterSpacing="10"
+                    Text="First Task"
+                    WidthRequest="180"   
+                    />
+                <Button
+                    CharacterSpacing="7"
+                    Text="Second Task"
+                    WidthRequest="180"
+                    Margin="0 , 10 , 0 , 10 "
+                    />
+                <Button 
+                    CharacterSpacing="7"
+                    Text="Third Task"
+                    WidthRequest="180"    
                     />
             </StackLayout>
         </StackLayout>
