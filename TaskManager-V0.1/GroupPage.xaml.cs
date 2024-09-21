@@ -6,6 +6,7 @@ namespace TaskManager_V0._1;
 public partial class GroupPage : ContentPage
 {
     public ObservableCollection<Group> Groups { get; set; }
+    //you are gay
 
     public GroupPage()
     {
