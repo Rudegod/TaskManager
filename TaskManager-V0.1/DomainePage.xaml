@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.DomainePage"
+             Title="DomainePage"
+             >
+    
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#778FD2">
+            <Label Text="Groups List" />
+            <ListView x:Name="GroupsListView" Background="#778FD2">
+                <!-- Define item template for groups -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding GroupName}" Detail="{Binding Description}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

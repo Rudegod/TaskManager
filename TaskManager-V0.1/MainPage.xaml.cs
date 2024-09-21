@@ -6,8 +6,8 @@
         {
             InitializeComponent();
         }
-        string tempUsername = "yaz";
-        string tempPassword = "123";
+        string tempUsername = "hi";
+        string tempPassword = "bye";
 
         private void loginButton(object sender, EventArgs e)
         {
@@ -16,7 +16,7 @@
 
             if (username == tempUsername && password == tempPassword)
             {
-                App.Current.MainPage = new NavigationPage(new HomePage());
+                App.Current.MainPage = new NavigationPage(new SmsPage());
             }
             else
             {
@@ -25,11 +25,9 @@
             }
 
         }
-
         private void forgotPasswordButton(object sender, EventArgs e)
         {
 
         }
     }
-
 }
