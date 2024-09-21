@@ -9,8 +9,8 @@
         <VerticalStackLayout  Padding="20" Background="#778FD2">
 
             <StackLayout>
-                <SearchBar Placeholder="Search Babe..." TextChanged="SearchBar_TextChanged" />
-                <ListView x:Name="TaskList" ItemsSource="{Binding Tasks}" />
+                <SearchBar Placeholder="Search Babe..." />
+                <ListView x:Name="TaskList" />
             </StackLayout>
             
             <Button
@@ -25,7 +25,7 @@
                 >
             </Button>
 
-            <CollectionView
+            <!--   <CollectionView
                 x:Name="TasksListView"
                 SelectionMode="Multiple"
                 SelectionChangedCommand="{Binding MultiselectionDependedTasks}"
@@ -41,13 +41,13 @@
 
             <Label Text="Users List" Margin="10 , 10 ,10 ,35" FontSize="24" FontAttributes="Bold"/>
             <ListView x:Name="TasksListView" Background="#778FD2">
-                <!-- Define item template for tasks -->
+                 Define item template for tasks
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding TaskName}" Detail="{Binding DueDate}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
+            </ListView>    -->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

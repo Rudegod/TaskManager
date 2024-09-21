@@ -11,7 +11,7 @@ namespace TaskManager_V0._1
     {
         public static int counter = 1;
 
-        private int id { get; set; }
+        public int id { get; set; }
         public string fullName { get; set; }
         public string userName { get; set; }
         public string password { get; set; }

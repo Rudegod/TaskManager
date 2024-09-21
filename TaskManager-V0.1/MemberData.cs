@@ -16,7 +16,5 @@ namespace TaskManager_V0._1
         public static string phone;
         public static string nationalCode;
         public static bool active;
-
-
     }
 }
