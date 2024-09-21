@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.ForgotPassPage"
+             Title="ForgotPassPage"
+             BackgroundColor="#778FD2">
+    
+    <VerticalStackLayout>
+        <Frame
+            HeightRequest="86"
+            WidthRequest="240"
+            VerticalOptions="CenterAndExpand"
+            Margin="0, 200, 0, 10"
+            BackgroundColor="BlueViolet"
+            CornerRadius="35"
+            >
+            <Entry
+                x:Name="emailEntry"
+                Placeholder="Enter your Email: "
+                PlaceholderColor="White">
+            </Entry>
+        </Frame>
+
+        <Button
+            Text="Recive"
+            WidthRequest="80"
+            HeightRequest="45"
+            Clicked="ReciveButton"
+            VerticalOptions="CenterAndExpand"
+            Margin="0, 15, 155, 0"
+            CornerRadius="35"
+            >
+        </Button>
+
+        <Button
+            Text="Back To Login"
+            WidthRequest="130"
+            HeightRequest="45"
+            Clicked="BackButton"
+            HorizontalOptions="CenterAndExpand"
+            Margin="155, 350, 0, 45"
+            CornerRadius="35"
+            >
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

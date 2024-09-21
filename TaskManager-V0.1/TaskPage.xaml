@@ -7,6 +7,12 @@
 
     <ScrollView>
         <VerticalStackLayout  Padding="20" Background="#778FD2">
+
+            <StackLayout>
+                <SearchBar Placeholder="Search Babe..." TextChanged="SearchBar_TextChanged" />
+                <ListView x:Name="TaskList" ItemsSource="{Binding Tasks}" />
+            </StackLayout>
+            
             <Button
                 CornerRadius="30"
                 Margin="45, 13, 0, 0"
