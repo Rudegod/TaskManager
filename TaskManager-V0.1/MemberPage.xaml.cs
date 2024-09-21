@@ -7,10 +7,11 @@ namespace TaskManager_V0._1;
 
 public partial class MemberPage : ContentPage
 {
+   
     public MemberPage()
 	{
 		InitializeComponent();
-        membersList.ItemsSource = TempData.members;
+        membersList.ItemsSource = MemberData.members;
         //BindingContext = this;
     }
 
@@ -23,7 +24,7 @@ public partial class MemberPage : ContentPage
 
     private void addMember(object? sender, PopupClosedEventArgs e)
     {
-        TempData.members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
+        MemberData.members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
             MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
     }
 
