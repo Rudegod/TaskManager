@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.TaskDetails"
+             Title="TaskDetails">
+    <ScrollView>
+            
+        <StackLayout Padding="20" Spacing="10">
+
+            <Label Text="Task Details"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#343a40"/>
+
+            <Label Text="Name : First Task" Margin="0 , 0 , 0 , 20 " />
+            <Label Text="Asign To Erfan Habibi" />
+            <DatePicker x:Name="DeadlinePicker" 
+                        Date="{Binding Deadline, Mode=TwoWay}"
+                         />
+            <Label Text="Cost = 45000$" x:Name="CostEntry" Margin="0 , 10 , 0 , 20" />
+            <Label Text="Time (2 weeks )" x:Name="TimeEntry" Margin=" 0 , 0 , 0 , 0"/>
+            <Label Text="Prerequisite : Nothing" x:Name="PrerequisiteEntry" />
+
+            <Label Text="Members Sharing Task : NO collaborators"
+                   FontAttributes="Bold"
+                   TextColor="#495057"/>
+            <CollectionView x:Name="MembersCollectionView">
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

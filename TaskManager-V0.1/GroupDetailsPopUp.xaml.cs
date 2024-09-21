@@ -11,6 +11,7 @@ public partial class GroupDetailsPopup : Popup
 
     private void FirstTask(object sender, EventArgs e)
     {
-        
+        Close();
+        App.Current.MainPage = new NavigationPage(new TaskDetails());
     }
 }
