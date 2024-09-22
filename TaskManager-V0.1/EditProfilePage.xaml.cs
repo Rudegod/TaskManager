@@ -9,6 +9,7 @@ public partial class EditProfilePage : ContentPage
     {
         InitializeComponent();
     }
+
     private async void OnSaveChangesClicked(object sender, EventArgs e)
     {
         // Here you would add logic to save the user data
