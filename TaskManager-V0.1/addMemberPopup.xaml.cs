@@ -4,7 +4,7 @@ namespace TaskManager_V0._1;
 
 public partial class addMemberPopup : Popup
 {
-    private bool f = false;
+    private bool f = true;
 	public addMemberPopup()
 	{
 		InitializeComponent();
@@ -19,6 +19,7 @@ public partial class addMemberPopup : Popup
         MemberData.phone = PhoneEntry.Text;
         MemberData.nationalCode = NationalEntry.Text;
         Member.f = true;
+        f = true;
         Close();
     }
 
@@ -26,37 +27,74 @@ public partial class addMemberPopup : Popup
     {
         if (FullNameEntry is null)
         {
-            nameError.isVisible = true;
+            nameError.IsVisible = true;
             f = false;
         }
-        if (UserNameEntry is null || !checkUsernameExist(UserNameEntry.Text)) {
-            userError.isVisible = true;
+        else
+            nameError.IsVisible = false;
+
+        if (UserNameEntry is null || checkUsernameExist(UserNameEntry.Text)) {
+            usernameError.IsVisible = true;
             f = false;
         }
+        else
+            usernameError.IsVisible = false;
+
         if (!checkPassword())
         {
-            passwordError.isVisible = true;
+            passwordError.IsVisible = true;
             f = false;
         }
+        else
+            passwordError.IsVisible = false;
+
         if(AgeEntry.Text is null)
         {
-            ageError.isVisible = true;
+            ageError.IsVisible = true;
             f = false;
         }
+        else
+            ageError.IsVisible= false;
+
         if (PhoneEntry.Text is null)
         {
-            phoneError.isVisible = true;
+            phoneError.IsVisible = true;
             f = false;
         }
+        else
+            phoneError.IsVisible = false;
+
         if (NationalEntry.Text is null)
         {
-            nationalError.isVisible = true;
+            nationalError.IsVisible = true;
             f = false;
         }
+        else
+            nationalError.IsVisible = false;
+
+        if (genderPicker.SelectedItem is null)
+        {
+            genderError.IsVisible = true;
+            f = false;
+        }
+        else
+            genderError.IsVisible = false;
+
+        if (activeOption.SelectedItem is null)
+        {
+            activeError.IsVisible = true;
+            f = false;
+        }
+        else
+            activeError.IsVisible = false;
+
         if (f)
             addMember();
         else
+        {
+            f = true;
             return;
+        }
 
     }
 
@@ -75,10 +113,8 @@ public partial class addMemberPopup : Popup
                 two = true;
             if (char.IsDigit(c))
                 three = true;
-            if (char.IsSymbol(c))
-                four = true;
         }
-        if (one && two && three && four)
+        if (one && two && three)
         {
             return true;
         }
