@@ -25,6 +25,7 @@ public partial class MemberPage : ContentPage
         if(Member.f)
             MemberData.members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
                 MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
+        Member.f = false;
     }
 
 }
