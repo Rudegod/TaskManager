@@ -15,6 +15,7 @@ namespace TaskManager_V0._1
         private List<Member> members;
         private List<Group> groups;
         public Domain() {
+
             this.id = ++counter;
             this.name = "forExample";
             this.parentID = 0;
