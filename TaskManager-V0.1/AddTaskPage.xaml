@@ -281,20 +281,20 @@
                     Margin="0, 0, 0, 0"
                     >
 
-                    <StackLayout>
-                        <Label
+                <StackLayout>
+                    <Label
                             Text="PreviousTask"
                             FontSize="22"
                             TextColor="Black"
                             HorizontalTextAlignment="Center"
                             Margin="0, 0, 0, 15"
                             />
-                        <Label
+                    <Label
                             Text="here should be the list of all members..."
                             FontSize="15"
                             TextColor="Black"
                             />
-                        <Button
+                    <Button
                             Text="Close"
                             TextColor="White"
                             CornerRadius="20"
