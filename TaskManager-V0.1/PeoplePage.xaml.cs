@@ -10,10 +10,9 @@ public partial class PeoplePage : ContentPage
 		InitializeComponent();
         membersList.ItemsSource = MemberData.members;
         //BindingContext = this;
-        membersList.ItemsSource = TempData.members;
-        TempData.members.Add(new Member());
-        TempData.members.Add(new Member());
-        TempData.members.Add(new Member());
+        MemberData.members.Add(new Member());
+        MemberData.members.Add(new Member());
+        MemberData.members.Add(new Member());
     }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)

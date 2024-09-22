@@ -11,15 +11,21 @@
     <StackLayout>
 
         <Entry x:Name="FullNameEntry" Placeholder="Full Name" PlaceholderColor="Black" />
+        <Label x:Name="nameError" TextColor="Red" IsVisible="False" Text="error"/>
         <Entry x:Name="UserNameEntry" Placeholder="User Name" PlaceholderColor="Black" />
+        <Label x:Name="usernameError" TextColor="Red" IsVisible="False" Text="error"/>
         <Entry
             x:Name="PasswordEntry"
             IsPassword="True"
             Placeholder="password"
             PlaceholderColor="Black" />
-        <Entry x:Name="AgeEntry" Placeholder="Age" PlaceholderColor="Black" />
+        <Label x:Name="passwordError" TextColor="Red" IsVisible="False" Text="error"/>
+        <Entry x:Name="AgeEntry" Placeholder="Age" PlaceholderColor="Black" Keyboard="Numeric"/>
+        <Label x:Name="ageError" TextColor="Red" IsVisible="False" Text="errlr"/>
         <Entry x:Name="PhoneEntry" Placeholder="Phone Number" PlaceholderColor="Black" />
+        <Label x:Name="phoneError" TextColor="Red" IsVisible="False" Text="error"/>
         <Entry x:Name="NationalEntry" Placeholder="National" PlaceholderColor="Black" />
+        <Label x:Name="nationalError" TextColor="Red" IsVisible="False" Text="error"/>
         <Picker
             x:Name="genderPicker"
             Title="Choose Gender"
@@ -32,6 +38,7 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        <Label x:Name="genderError" TextColor="Red" IsVisible="False" Text="error"/>
         <Picker
             x:Name="activeOption"
             Title="Select the Activity"
@@ -44,11 +51,12 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        <Label x:Name="activeError" TextColor="Red" IsVisible="False" Text="error"/>
         <HorizontalStackLayout>
             <Button
                 CornerRadius="35"
                 BackgroundColor="#778FD2"
-                Clicked="addMember"
+                Clicked="checker"
                 HeightRequest="60"
                 HorizontalOptions="CenterAndExpand"
                 Text="Add"
