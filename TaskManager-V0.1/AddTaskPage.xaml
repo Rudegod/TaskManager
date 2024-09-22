@@ -261,20 +261,20 @@
                     Margin="0, 0, 0, 0"
                     >
 
-                    <StackLayout>
-                        <Label
+                <StackLayout>
+                    <Label
                             Text="PreviousTask"
                             FontSize="22"
                             TextColor="Black"
                             HorizontalTextAlignment="Center"
                             Margin="0, 0, 0, 15"
                             />
-                        <Label
+                    <Label
                             Text="here should be the list of all members..."
                             FontSize="15"
                             TextColor="Black"
                             />
-                        <Button
+                    <Button
                             Text="Close"
                             TextColor="White"
                             CornerRadius="20"
@@ -282,56 +282,8 @@
                             BackgroundColor="#431D32"
                             Clicked="PreviousCloseButton"
                             />
-                    </StackLayout>
-                </ContentView>
-
-                <!-- NextTask PopUp -->
-                <Button 
-                    Text="Next Task"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
-                    TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="NextTaskShowButton"
-                    />
-
-                <!-- Popup5 Definition -->
-                <ContentView
-                    x:Name="Popup5"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
-
-                    <StackLayout>
-                        <Label
-                            Text="NextTask"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                        <Label
-                            Text="here should be the list of all tasks..."
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                        <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="NextTaskCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
+                </StackLayout>
+            </ContentView>
 
                 <!-- Dec.. Entry -->
                 <Frame

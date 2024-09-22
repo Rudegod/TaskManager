@@ -50,16 +50,6 @@ public partial class AddTaskPage : ContentPage
         Popup4.IsVisible = false;
     }
 
-    private void NextTaskShowButton(object sender, EventArgs e)
-    {
-        Popup5.IsVisible = true;
-    }
-
-    private void NextTaskCloseButton(object sender, EventArgs e)
-    {
-        Popup5.IsVisible = false;
-    }
-
     private void OKButton(object sender, EventArgs e)
     {
         // Navigation.PushAsync(new TaskPage());
