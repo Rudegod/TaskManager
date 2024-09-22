@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.PeoplePage"
+             Title="PeoplePage"
+             BackgroundColor="#778fd2">
+    <VerticalStackLayout>
+        <Frame
+            BackgroundColor="#B7CB99"
+            CornerRadius="35"
+            WidthRequest="358"
+            HeightRequest="300"
+            Margin="0, 30, 0, 10">
+
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+
+            <CollectionView
+                x:Name="membersList"
+                Background="Transparent"
+                HeightRequest="700">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding fullName}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding userName}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding password}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding nationalcode}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding age}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding gender}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding id}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </Frame>
+
+        <Frame
+            BackgroundColor="#B7CB99"
+            CornerRadius="35"
+            WidthRequest="358"
+            HeightRequest="300"
+            Margin="0, 5, 0, 30"
+            >
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Button
+            Text="Add Member"
+            Margin="0, 0, 45, 45"
+            TextColor="DarkBlue"
+            BackgroundColor="#B7CB99"
+            Clicked="addButton"
+            HeightRequest="60"
+            WidthRequest="120"
+            CornerRadius="35"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="EndAndExpand"
+            />
+        
+    </VerticalStackLayout>
+</ContentPage>

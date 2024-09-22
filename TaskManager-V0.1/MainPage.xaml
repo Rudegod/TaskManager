@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.MainPage"
-             BackgroundColor="#78705b">
-
+             BackgroundColor="#778FD2">
 
     <StackLayout>
         <Label
             Text="Task Manager"
             HorizontalOptions="CenterAndExpand"
             FontSize="30"
-            Margin="0, 15, 0, 24"
+            Margin="0, 25, 0, 24"
             FontAttributes="Bold"/>
         <Image
             Margin="0, 0, 0, 120"
@@ -21,28 +20,30 @@
             CornerRadius="35"
             WidthRequest="318"
             HeightRequest="60"
-            BackgroundColor="Black">
+            BackgroundColor="#B7CB99">
             <Entry
                 x:Name="userNameEntry"
                 Placeholder="User Name"
-                TextColor="white"
+                PlaceholderColor="Black"
+                TextColor="Black"
                 HorizontalTextAlignment="Center"
                 FontSize="24"
                 HeightRequest="50"
                 WidthRequest="260"
                 HorizontalOptions="CenterAndExpand"/>
         </Frame>
+        
         <Frame
             Margin="0, 25, 0, 105"
             CornerRadius="35"
             WidthRequest="318"
             HeightRequest="60"
-
-            BackgroundColor="Black">
+            BackgroundColor="#B7CB99">
             <Entry
                 x:Name="passwordEntry"
                 Placeholder="Password"
-                TextColor="White"
+                PlaceholderColor="Black"
+                TextColor="Black"
                 HorizontalTextAlignment="Center"
                 IsPassword="True"
                 FontSize="24"
@@ -52,19 +53,19 @@
         </Frame>
 
         <Button
-            BackgroundColor="Black"
+            BackgroundColor="#B7CB99"
             CornerRadius="35"
             WidthRequest="318"
             HeightRequest="60"
-            Text="Login"
-            TextColor="#ffffff"
+            Text="Send Code via SMS"
+            TextColor="Black"
             FontSize="26"
             FontAttributes="Bold"
             Clicked="loginButton"/>
         <Button
             Margin="0, 10, 0, 0"
             Text="Forgot Password"
-            BackgroundColor="#78705b"
+            BackgroundColor="#778FD2"
             TextColor="Black"
             WidthRequest="130"
             Clicked="forgotPasswordButton"/>

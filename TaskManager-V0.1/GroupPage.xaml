@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TaskManager_V0._1.GroupPage"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
-    
-    <StackLayout>
-        <Label
-            Text="groups"
-            FontAttributes="Bold"
-            HorizontalOptions="CenterAndExpand"
-            TextColor="Black"
-            FontSize="30"
-            />
-        
-        <Button
-            VerticalOptions="EndAndExpand"
-            HorizontalOptions="EndAndExpand"
-            WidthRequest="60"
-            HeightRequest="60"
-            Margin="0, 0, 20, 20"
-            Clicked="addButton"
-            />
+<ContentPage
+    x:Class="TaskManager_V0._1.GroupPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GroupPage"
+    BackgroundColor="#778FD2">
+    <!--  you are gay  -->
 
-    </StackLayout>
+    <VerticalStackLayout Padding="20" Background="#778FD2">
+        <Button
+            Margin="45,13,0,0"
+            BackgroundColor="#B7CB99"
+            Clicked="AddButton"
+            CornerRadius="30"
+            HorizontalOptions="Start"
+            Text="Add group"
+            TextColor="Black"
+            VerticalOptions="Start" />
+
+        <Label Text="Groups List" />
+        <ListView x:Name="GroupsListView" Background="#778FD2">
+            <!--  Define item template for groups  -->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Detail="{Binding Description}" Text="{Binding GroupName}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
 </ContentPage>

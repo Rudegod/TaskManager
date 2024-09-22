@@ -6,31 +6,25 @@ public partial class HomePage : ContentPage
 {
 	public HomePage()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
-
-    private void groupButton(object sender, EventArgs e)
-    {
-        //App.Current.MainPage = new NavigationPage(new GroupPage());
-        var groupPage = new GroupPage();
-        Navigation.PushAsync(groupPage);
-    }
 
     private void peopleButton(object sender, EventArgs e)
     {
-        //App.Current.MainPage = new NavigationPage(new MemberPage());
-        var memberPage = new MemberPage();
-        Navigation.PushModalAsync(memberPage);
+
+
+        Navigation.PushAsync(new PeoplePage());
+
     }
 
     private void domainButton(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new DomainePage());
     }
 
     private void taskButton(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new TaskPage());
     }
     private void ProfileButton(object sender, EventArgs e)
     {

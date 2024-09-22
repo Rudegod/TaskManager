@@ -11,7 +11,7 @@ namespace TaskManager_V0._1
     {
         public static int counter = 1;
 
-        private int id { get; set; }
+        public int id { get; set; }
         public string fullName { get; set; }
         public string userName { get; set; }
         public string password { get; set; }
@@ -20,6 +20,8 @@ namespace TaskManager_V0._1
         public string phone { get; set; }
         public string nationalCode { get; set; }
         public bool active { get; set; }
+
+        public static bool f { get; set; }
 
         public Member(){
             this.id = counter;
@@ -31,6 +33,7 @@ namespace TaskManager_V0._1
             this.phone = "09335343272";
             this.nationalCode = "0926206435";
             this.active = false;
+            f = false;
             counter++;
         }
         public Member(string fullname, string username, string password, int age, bool gender, string phone, string nationalcode, bool active)
@@ -44,6 +47,7 @@ namespace TaskManager_V0._1
             this.phone = phone;
             this.nationalCode = nationalcode;
             this.active = active;
+            f = true;
             counter++;
         }
     }
