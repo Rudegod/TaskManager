@@ -9,9 +9,4 @@ public partial class TaskPage : ContentPage
 	{
 		InitializeComponent();
     }
-
-    private void AddTaskButton(object sender, EventArgs e)
-    {
-        Navigation.PushModalAsync(new AddTaskPage());
-    }
 }
