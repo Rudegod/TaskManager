@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
-using TaskManager_V0._1.ViewModel;
+using TaskManager_V0._1.viewmodel;
 using CommunityToolkit.Maui;
 
 namespace TaskManager_V0._1
