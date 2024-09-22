@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.PeoplePage"
              Title="PeoplePage"
-             BackgroundColor="#2A3759">
+             BackgroundColor="#778fd2">
     <VerticalStackLayout>
         <Frame
             BackgroundColor="#B7CB99"
