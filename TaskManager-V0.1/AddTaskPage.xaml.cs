@@ -50,16 +50,6 @@ public partial class AddTaskPage : ContentPage
         Popup4.IsVisible = false;
     }
 
-    private void NextTaskShowButton(object sender, EventArgs e)
-    {
-        Popup5.IsVisible = true;
-    }
-
-    private void NextTaskCloseButton(object sender, EventArgs e)
-    {
-        Popup5.IsVisible = false;
-    }
-
     private void OKButton(object sender, EventArgs e)
     {
         // Navigation.PushAsync(new TaskPage());
@@ -74,5 +64,10 @@ public partial class AddTaskPage : ContentPage
     private void AssignCloseButton(object sender, EventArgs e)
     {
         Popup6.IsVisible = false;
+    }
+
+    private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        importanceValueLabel.Text = ((int)e.NewValue).ToString();
     }
 }

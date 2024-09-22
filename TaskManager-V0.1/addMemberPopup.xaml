@@ -6,17 +6,25 @@
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:mct ="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
     CanBeDismissedByTappingOutsideOfPopup="False"
-    Size="450, 450">
+    Size="380, 440">
 
     <StackLayout>
-    
-        <Entry x:Name="FullNameEntry" Placeholder="full name" />
-        <Entry x:Name="UserNameEntry" Placeholder="user name"/>
-        <Entry x:Name="PasswordEntry" Placeholder="password" IsPassword="True"/>
-        <Entry x:Name="AgeEntry" Placeholder="age"/>
-        <Entry x:Name="PhoneEntry" Placeholder="phone number"/>
-        <Entry x:Name="NationalEntry" Placeholder="national"/>
-        <Picker x:Name="genderPicker" Title="choose" SelectedIndexChanged="Genderpicker">
+
+        <Entry x:Name="FullNameEntry" Placeholder="Full Name" PlaceholderColor="Black" />
+        <Entry x:Name="UserNameEntry" Placeholder="User Name" PlaceholderColor="Black" />
+        <Entry
+            x:Name="PasswordEntry"
+            IsPassword="True"
+            Placeholder="password"
+            PlaceholderColor="Black" />
+        <Entry x:Name="AgeEntry" Placeholder="Age" PlaceholderColor="Black" />
+        <Entry x:Name="PhoneEntry" Placeholder="Phone Number" PlaceholderColor="Black" />
+        <Entry x:Name="NationalEntry" Placeholder="National" PlaceholderColor="Black" />
+        <Picker
+            x:Name="genderPicker"
+            Title="Choose Gender"
+            TitleColor="Black"
+            SelectedIndexChanged="Genderpicker">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>male</x:String>
@@ -24,7 +32,11 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-        <Picker x:Name="activeOption" Title="choose" SelectedIndexChanged="activeOptionPicker">
+        <Picker
+            x:Name="activeOption"
+            Title="Select the Activity"
+            TitleColor="Black"
+            SelectedIndexChanged="activeOptionPicker">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>active</x:String>
@@ -32,16 +44,30 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        <HorizontalStackLayout>
             <Button
-            BackgroundColor="Black"
-            Clicked="addMember"
-            HeightRequest="60"
-            HorizontalOptions="CenterAndExpand"
-            Text="ADD"
-            TextColor="red"
-            VerticalOptions="EndAndExpand"
-            WidthRequest="120" />
-
+                CornerRadius="35"
+                BackgroundColor="#778FD2"
+                Clicked="addMember"
+                HeightRequest="60"
+                HorizontalOptions="CenterAndExpand"
+                Text="Add"
+                TextColor="DarkBlue"
+                VerticalOptions="EndAndExpand"
+                WidthRequest="120"
+                Margin="20, 10, 10, 0"
+                />
+            <Button
+                BackgroundColor="#778FD2"
+                Clicked="closePopup"
+                HeightRequest="60"
+                WidthRequest="120"
+                CornerRadius="35"
+                HorizontalOptions="CenterAndExpand"
+                Text="Close"
+                TextColor="DarkBlue"
+                VerticalOptions="EndAndExpand"
+                />
+        </HorizontalStackLayout>
     </StackLayout>
-
 </mct:Popup>

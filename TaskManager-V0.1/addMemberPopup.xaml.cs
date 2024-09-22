@@ -16,6 +16,7 @@ public partial class addMemberPopup : Popup
         MemberData.age = Convert.ToInt32(AgeEntry.Text);
         MemberData.phone = PhoneEntry.Text;
         MemberData.nationalCode = NationalEntry.Text;
+        Member.f = true;
         Close();
     }
 
@@ -41,5 +42,11 @@ public partial class addMemberPopup : Popup
         }
         else
             MemberData.gender = false;
+    }
+
+    private void closePopup(object sender, EventArgs e)
+    {
+        Member.f = false;
+        Close();
     }
 }

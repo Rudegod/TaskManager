@@ -21,6 +21,8 @@ namespace TaskManager_V0._1
         public string nationalCode { get; set; }
         public bool active { get; set; }
 
+        public static bool f { get; set; }
+
         public Member(){
             this.id = counter;
             this.fullName = "yazdan";
@@ -31,6 +33,7 @@ namespace TaskManager_V0._1
             this.phone = "09335343272";
             this.nationalCode = "0926206435";
             this.active = false;
+            f = false;
             counter++;
         }
         public Member(string fullname, string username, string password, int age, bool gender, string phone, string nationalcode, bool active)
@@ -44,6 +47,7 @@ namespace TaskManager_V0._1
             this.phone = phone;
             this.nationalCode = nationalcode;
             this.active = active;
+            f = true;
             counter++;
         }
     }

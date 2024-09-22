@@ -5,11 +5,11 @@
              Title="Add Task Page"
              BackgroundColor="#2A3759">
 
-        <ScrollView>
-            <StackLayout>
+    <ScrollView>
+        <StackLayout>
 
-                <!-- Assign to a person PopUp -->
-                <Button 
+            <!-- Assign to a person PopUp -->
+            <Button 
                     Text="Assign to a person"
                     Margin="0, 15, 0, 15"
                     CornerRadius="35"
@@ -22,8 +22,8 @@
                     Clicked="AssignShowButton"
                     />
 
-                <!-- Popup6 Definition -->
-                <ContentView
+            <!-- Popup6 Definition -->
+            <ContentView
                     x:Name="Popup6"
                     IsVisible="False"
                     BackgroundColor="#778FD2"
@@ -56,8 +56,8 @@
                     </StackLayout>
                 </ContentView>
 
-                <!-- Deadline Entry -->
-                <Frame
+            <!-- Deadline Entry -->
+            <Frame
                     Margin="0, 15, 0, 15"
                     CornerRadius="35"
                     WidthRequest="280"
@@ -72,29 +72,49 @@
                         HorizontalOptions="CenterAndExpand"
                         />
                 </Frame>
-                
-                <!-- Cost Entry -->
-                <Frame
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    BackgroundColor="#B7CB99">
-                    <Entry
-                        x:Name="cost"
-                        Placeholder="Cost"
-                        PlaceholderColor="Black"
-                        TextColor="Black"
-                        HorizontalTextAlignment="Center"
-                        FontSize="22"
-                        HeightRequest="50"
-                        WidthRequest="210"
-                        HorizontalOptions="CenterAndExpand"
-                        />
+
+            <!-- Time Entry -->
+            <Frame
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                WidthRequest="280"
+                HeightRequest="55"
+                BackgroundColor="#B7CB99">
+                <Entry
+                    x:Name="time"
+                    Placeholder="Time"
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    FontSize="22"
+                    HeightRequest="50"
+                    WidthRequest="210"
+                    HorizontalOptions="CenterAndExpand"
+                    />
+            </Frame>
+
+            <!-- Cost Entry -->
+            <Frame
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                WidthRequest="280"
+                HeightRequest="55"
+                BackgroundColor="#B7CB99">
+                <Entry
+                    x:Name="cost"
+                    Placeholder="Cost"
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    FontSize="22"
+                    HeightRequest="50"
+                    WidthRequest="210"
+                    HorizontalOptions="CenterAndExpand"
+                    />
                 </Frame>
-                
-                <!-- Prerequisites PopUp -->
-                <Button 
+            
+            <!-- Prerequisites PopUp -->
+            <Button 
                     Text="Prerequisites"
                     Margin="0, 15, 0, 15"
                     CornerRadius="35"
@@ -107,8 +127,8 @@
                     Clicked="PreShowButton"
                     />
 
-                <!-- Popup Definition -->
-                <ContentView
+            <!-- Popup Definition -->
+            <ContentView
                     x:Name="Popup"
                     IsVisible="False"
                     BackgroundColor="#778FD2"
@@ -140,9 +160,9 @@
                             />
                     </StackLayout>
                 </ContentView>
-                
-                <!-- Couple PopUp -->
-                <Button 
+            
+            <!-- Couple PopUp -->
+            <Button 
                     Text="Couple"
                     Margin="0, 15, 0, 15"
                     CornerRadius="35"
@@ -155,8 +175,8 @@
                     Clicked="CouShowButton"
                     />
 
-                <!-- Popup2 Definition -->
-                <ContentView
+            <!-- Popup2 Definition -->
+            <ContentView
                     x:Name="Popup2"
                     IsVisible="False"
                     BackgroundColor="#778FD2"
@@ -189,8 +209,8 @@
                     </StackLayout>
                 </ContentView>
 
-                <!-- Manager PopUp -->
-                <Button 
+            <!-- Manager PopUp -->
+            <Button 
                     Text="Manager"
                     Margin="0, 15, 0, 15"
                     CornerRadius="35"
@@ -203,8 +223,8 @@
                     Clicked="ManagerShowButton"
                     />
 
-                <!-- Popup3 Definition -->
-                <ContentView
+            <!-- Popup3 Definition -->
+            <ContentView
                     x:Name="Popup3"
                     IsVisible="False"
                     BackgroundColor="#778FD2"
@@ -237,8 +257,8 @@
                     </StackLayout>
                 </ContentView>
 
-                <!-- Previous PopUp -->
-                <Button 
+            <!-- Previous PopUp -->
+            <Button 
                     Text="Previous Task"
                     Margin="0, 15, 0, 15"
                     CornerRadius="35"
@@ -251,8 +271,8 @@
                     Clicked="PreviousShowButton"
                     />
 
-                <!-- Popup4 Definition -->
-                <ContentView
+            <!-- Popup4 Definition -->
+            <ContentView
                     x:Name="Popup4"
                     IsVisible="False"
                     BackgroundColor="#778FD2"
@@ -285,106 +305,54 @@
                     </StackLayout>
                 </ContentView>
 
-                <!-- NextTask PopUp -->
-                <Button 
-                    Text="Next Task"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
+            <!-- Dec.. Entry -->
+            <Frame
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                WidthRequest="280"
+                BackgroundColor="#B7CB99">
+                <Editor
+                    Placeholder="Description"
+                    AutoSize="TextChanges"
                     TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="NextTaskShowButton"
-                    />
+                    BackgroundColor="#B7CB99"/>
+            </Frame>
 
-                <!-- Popup5 Definition -->
-                <ContentView
-                    x:Name="Popup5"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
+            <!-- Priority Entry -->
+            <Label
+                Text="Set Importance Level"
+                Margin="45, 10"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="White" />
+            <Slider
+                x:Name="importanceSlider"
+                Minimum="0"
+                Maximum="100"
+                Margin="45, 10"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                MaximumTrackColor="#B7CB99"
+                MinimumTrackColor="#B7CB99"
+                ValueChanged="Slider_ValueChanged"/>
+            <Label
+                x:Name="importanceValueLabel"
+                Margin="45, 10"
+                FontSize="17"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"/>
 
-                    <StackLayout>
-                        <Label
-                            Text="NextTask"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                        <Label
-                            Text="here should be the list of all tasks..."
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                        <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="NextTaskCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
-
-                <!-- Dec.. Entry -->
-                <Frame
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    BackgroundColor="#B7CB99">
-                    <Entry
-                        x:Name="Description"
-                        Placeholder="Description"
-                        PlaceholderColor="Black"
-                        TextColor="Black"
-                        HorizontalTextAlignment="Center"
-                        FontSize="22"
-                        WidthRequest="210"
-                        HeightRequest="50"
-                        HorizontalOptions="CenterAndExpand"
-                        />
-                </Frame>
-
-                <!-- Priority Entry -->
-                <Frame
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    BackgroundColor="#B7CB99">
-                    <Entry
-                        x:Name="Priority"
-                        Placeholder="Priority"
-                        PlaceholderColor="Black"
-                        TextColor="Black"
-                        HorizontalTextAlignment="Center"
-                        FontSize="22"
-                        HeightRequest="50"
-                        WidthRequest="210"
-                        HorizontalOptions="CenterAndExpand"
-                        />
-                </Frame>
-
-                <!-- Ok Button -->
-                <!-- <Button
-                    Text="OK"
-                    Margin="0, 0, 45, 15"
-                    CornerRadius="30"
-                    TextColor="Black"
-                    FontSize="Body"
-                    BackgroundColor="#778FD2"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="EndAndExpand"
-                    Clicked="OKButton"
-                    /> -->
+            <!-- Ok Button -->
+            <!-- <Button
+                Text="OK"
+                Margin="0, 0, 45, 15"
+                CornerRadius="30"
+                TextColor="Black"
+                FontSize="Body"
+                BackgroundColor="#778FD2"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="EndAndExpand"
+                Clicked="OKButton"
+                /> -->
         </StackLayout>
-        </ScrollView>
+    </ScrollView>
 </ContentPage>

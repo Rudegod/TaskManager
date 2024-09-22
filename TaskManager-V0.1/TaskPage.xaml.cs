@@ -12,6 +12,6 @@ public partial class TaskPage : ContentPage
 
     private void AddTaskButton(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new AddTaskPage());
+        Navigation.PushAsync(new AddTaskPage());
     }
 }
