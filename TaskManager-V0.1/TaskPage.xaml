@@ -21,7 +21,7 @@
                 TextColor="Black"
                 BackgroundColor="#B7CB99"
                 Text="Add Task"
-                Clicked="AddTaskButton"
+                Clicked="AddButton"
                 >
             </Button>
 

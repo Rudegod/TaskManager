@@ -163,17 +163,17 @@
             
             <!-- Couple PopUp -->
             <Button 
-                    Text="Couple"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
-                    TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="CouShowButton"
-                    />
+                 Text="Couple"
+                 Margin="0, 15, 0, 15"
+                 CornerRadius="35"
+                 BackgroundColor="#B7CB99"
+                 TextColor="Black"
+                 FontSize="22"
+                 WidthRequest="280"
+                 HeightRequest="55"
+                 HorizontalOptions="CenterAndExpand"
+                 Clicked="CouShowButton"
+                 />
 
             <!-- Popup2 Definition -->
             <ContentView
@@ -319,16 +319,25 @@
             </Frame>
 
             <!-- Priority Entry -->
-            <Label
-                Text="Set Importance Level"
-                Margin="45, 10"
-                HorizontalOptions="CenterAndExpand"
-                TextColor="White" />
+            <Frame
+                Margin="0, 15, 0, 0"
+                BackgroundColor="#B7CB99"
+                Padding="0"
+                CornerRadius="35"
+                HorizontalOptions="CenterAndExpand">
+                <Label
+                    Text="Set Importance Level"
+                    TextColor="Black"
+                    Margin="45, 10"
+                    HorizontalOptions="CenterAndExpand" />
+            </Frame>
+
+
             <Slider
                 x:Name="importanceSlider"
                 Minimum="0"
                 Maximum="100"
-                Margin="45, 10"
+                Margin="45, 5, 45, 0"
                 VerticalOptions="Center"
                 HorizontalOptions="FillAndExpand"
                 MaximumTrackColor="#B7CB99"
@@ -336,7 +345,7 @@
                 ValueChanged="Slider_ValueChanged"/>
             <Label
                 x:Name="importanceValueLabel"
-                Margin="45, 10"
+                Margin="0, 0, 0, 30"
                 FontSize="17"
                 TextColor="White"
                 HorizontalOptions="CenterAndExpand"/>
@@ -354,7 +363,7 @@
                 Clicked="OKButton"
                 /> -->
             
-            <!-- hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii -->
+            <!-- 6:13 PM   9/23 -->
         </StackLayout>
     </ScrollView>
 </ContentPage>

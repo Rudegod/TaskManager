@@ -112,7 +112,8 @@
 	  <MauiXaml Update="GroupDetailsPopUp2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="GroupPage.xaml">
+		<MauiXaml Update="GroupPage.xaml">
+		</MauiXaml>
 
 	  <MauiXaml Update="AddTaskPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
