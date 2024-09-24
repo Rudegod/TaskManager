@@ -9,7 +9,6 @@ namespace TaskManager_V0._1
     public class Task
     {
         public static int counter = 1;
-
         public int id { get; set; }
         public string name { get; set; }
         public Member assign { get; set; }

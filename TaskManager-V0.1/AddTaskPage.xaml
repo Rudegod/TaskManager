@@ -313,8 +313,9 @@
                 BackgroundColor="#B7CB99">
                 <Editor
                     Placeholder="Description"
-                    AutoSize="TextChanges"
+                    PlaceholderColor="Black"
                     TextColor="Black"
+                    AutoSize="TextChanges"
                     BackgroundColor="#B7CB99"/>
             </Frame>
 
@@ -331,8 +332,6 @@
                     Margin="45, 10"
                     HorizontalOptions="CenterAndExpand" />
             </Frame>
-
-
             <Slider
                 x:Name="importanceSlider"
                 Minimum="0"
