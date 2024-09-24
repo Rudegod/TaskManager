@@ -34,14 +34,14 @@
 
                     <StackLayout>
                         <Label
-                            Text="AssigntoAperson"
+                            Text="hiiiiiiiiii"
                             FontSize="22"
                             TextColor="Black"
                             HorizontalTextAlignment="Center"
                             Margin="0, 0, 0, 15"
                             />
                         <Label
-                            Text="here should be the list of all members..."
+                            Text="tfcutgcfjyucfjgtfv all members..."
                             FontSize="15"
                             TextColor="Black"
                             />
@@ -327,7 +327,7 @@
                 CornerRadius="35"
                 HorizontalOptions="CenterAndExpand">
                 <Label
-                    Text="Set Importance Level"
+                    Text="Set Importance Level:"
                     TextColor="Black"
                     Margin="45, 10"
                     HorizontalOptions="CenterAndExpand" />

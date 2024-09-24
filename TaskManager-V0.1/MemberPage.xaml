@@ -3,7 +3,7 @@
     x:Class="TaskManager_V0._1.MemberPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Groups and Members"
+    Title="Members"
     BackgroundColor="#778fd2">
 
     <StackLayout>
@@ -60,7 +60,6 @@
                                 Text="{Binding id}"
                                 TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
-
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -68,7 +67,7 @@
         </ListView>
 
         <Button
-            Text="Add Member"
+            Text="Add Mamber"
             Margin="0, 0, 45, 45"
             TextColor="DarkBlue"
             BackgroundColor="#B7CB99"

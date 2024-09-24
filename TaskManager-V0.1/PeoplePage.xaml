@@ -69,7 +69,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
         </Frame>
 
         <Frame
@@ -82,20 +81,7 @@
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  NumberOfTapsRequired="1" />
             </Frame.GestureRecognizers>
+            
         </Frame>
-
-        <Button
-            Text="Add Member"
-            Margin="0, 0, 45, 45"
-            TextColor="DarkBlue"
-            BackgroundColor="#B7CB99"
-            Clicked="addButton"
-            HeightRequest="60"
-            WidthRequest="120"
-            CornerRadius="35"
-            HorizontalOptions="EndAndExpand"
-            VerticalOptions="EndAndExpand"
-            />
-        
     </VerticalStackLayout>
 </ContentPage>
