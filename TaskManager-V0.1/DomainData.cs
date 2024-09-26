@@ -12,6 +12,7 @@ namespace TaskManager_V0._1
         public static ObservableCollection<Domain> domains = new ObservableCollection<Domain>();
         public static string name;
         public static int parentID;
-        public static List<Group> groups;
+        public static List<Group> groups = new List<Group>();
+        public static List<Domain> subDomains = new List<Domain>();
     }
 }
