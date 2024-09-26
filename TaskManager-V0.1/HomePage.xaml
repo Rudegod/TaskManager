@@ -5,8 +5,25 @@
              Title="Task Manager"
              BackgroundColor="#2A3759">
 
-    <StackLayout>
-        <Label
+    <Grid>
+
+
+        <StackLayout>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnMainAreaTapped" />
+            </StackLayout.GestureRecognizers>
+
+            <!-- Side menu -->
+            <Button x:Name="HamburgerButton" Margin="5, 0, 0, 0" Text="☰" FontAttributes="Bold" Clicked="OnHamburgerMenuClicked" 
+                BackgroundColor="#2A3759" HeightRequest="50" WidthRequest="50" 
+                HorizontalOptions="Start" VerticalOptions="Start" 
+                CornerRadius="25" TextColor="White"/>
+
+            <!-- Side menu layout -->
+
+
+
+            <Label
             Text="Home"
             TextColor="#FFFFFF"
             FontSize="48"
@@ -14,7 +31,7 @@
             HorizontalOptions="Center"
             Margin="0, 100, 0, 80"/>
 
-        <Button
+            <Button
             Text="People"
             BackgroundColor="#B7CB99"
             TextColor="#000000"
@@ -25,8 +42,8 @@
             HeightRequest="70"
             Margin="0, 30, 0, 0"
             Clicked="peopleButton"/>
-        
-        <Button
+
+            <Button
             Text="Domain"
             BackgroundColor="#B7CB99"
             TextColor="#000000"
@@ -37,8 +54,8 @@
             HeightRequest="70"
             Margin="0, 30, 0, 0"
             Clicked="domainButton"/>
-        
-        <Button
+
+            <Button
             Text="Task"
             BackgroundColor="#B7CB99"
             TextColor="#000000"
@@ -49,5 +66,16 @@
             HeightRequest="70"
             Margin="0, 30, 0, 20"
             Clicked="taskButton"/>
-    </StackLayout>
+        </StackLayout>
+        <StackLayout x:Name="OnHamburger" IsVisible="False" Spacing="15" 
+                    BackgroundColor="#FFFFFF" Padding="10" 
+                    HorizontalOptions="Start" VerticalOptions="Fill">
+            <Label Text="Menu" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Button Text="Home" BackgroundColor="#F0F0F0" TextColor="#333"/>
+            <Button Text="Profile" BackgroundColor="#F0F0F0" TextColor="#333"/>
+            <Button Text="Settings" BackgroundColor="#F0F0F0" TextColor="#333"/>
+            <Button Text="Help" BackgroundColor="#F0F0F0" TextColor="#333"/>
+            <Button Text="Logout" BackgroundColor="#F0F0F0" TextColor="#333"/>
+        </StackLayout>
+    </Grid>
 </ContentPage>
