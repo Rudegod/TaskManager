@@ -5,7 +5,9 @@
              Title="Task Manager"
              BackgroundColor="#2A3759">
 
+
     <StackLayout>
+        
         <Label
             Text="Home"
             TextColor="#FFFFFF"

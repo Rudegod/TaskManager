@@ -3,8 +3,11 @@
     x:Class="TaskManager_V0._1.MemberPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="members">
+    Title="Members"
+    BackgroundColor="#778fd2">
+
     <StackLayout>
+        
         <ListView
             x:Name="membersList"
             Background="Transparent"
@@ -18,39 +21,45 @@
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="{Binding fullName}"
-                                TextColor="Blue"
+                                TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="{Binding userName}"
-                                TextColor="Blue"
+                                TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="{Binding password}"
-                                TextColor="Blue"
+                                TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="{Binding nationalcode}"
-                                TextColor="Blue"
+                                TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="{Binding age}"
-                                TextColor="Red"
+                                TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="{Binding gender}"
-                                TextColor="Green"
+                                TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
 
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding id}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -58,12 +67,16 @@
         </ListView>
 
         <Button
-            Margin="0,0,20,20"
-            BackgroundColor="Black"
+            Text="Add Mamber"
+            Margin="0, 0, 45, 45"
+            TextColor="DarkBlue"
+            BackgroundColor="#B7CB99"
             Clicked="addButton"
             HeightRequest="60"
+            WidthRequest="120"
+            CornerRadius="35"
             HorizontalOptions="EndAndExpand"
             VerticalOptions="EndAndExpand"
-            WidthRequest="60" />
+            />
     </StackLayout>
 </ContentPage>

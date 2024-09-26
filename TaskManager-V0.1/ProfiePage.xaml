@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.ProfiePage"
+             Title="ProfilePage"
+             BackgroundColor="#F5f5f5"
+             >
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <!-- Profile Picture -->
+            <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150">
+                <Image Source="dotnet_bot.png"/>
+            </Frame>
+
+            <!-- User Name -->
+            <Label Text="Erfan Habibi"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <!-- User Bio -->
+            <Label Text="Software Developer "
+               FontSize="15"
+               HorizontalOptions="Center"
+               TextColor="#666666"
+               HorizontalTextAlignment="Center" />
+
+            <!-- Action Buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Button
+                    Text="Edit Profile" 
+                    BackgroundColor="#007AFF" 
+                    TextColor="White" 
+                    CornerRadius="20" 
+                    WidthRequest="120"
+                    Clicked="EditProfileButton"
+                    />
+            </StackLayout>
+
+            <!-- Divider -->
+            <BoxView HeightRequest="1" Color="#D3D3D3" />
+
+            <!-- Additional Info -->
+            <Label Text="Email: erfan@gmail.com"
+               FontSize="16"
+               HorizontalOptions="Start" />
+
+            <Label Text="Phone: 09303999827"
+               FontSize="16"
+               HorizontalOptions="Start" />
+
+            <Label Text="Groups :"
+               FontSize="16"
+               HorizontalOptions="StartAndExpand"/>
+
+            <Button 
+                Text="Group1 "
+                WidthRequest="100"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="CenterAndExpand" 
+                Clicked="GroupPopUp"    
+                />
+            <Button Text="Group2 "
+                WidthRequest="100"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="GroupPopUp2"
+                />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

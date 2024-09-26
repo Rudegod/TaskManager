@@ -7,7 +7,6 @@ namespace TaskManager_V0._1;
 
 public partial class MemberPage : ContentPage
 {
-   
     public MemberPage()
 	{
 		InitializeComponent();
@@ -21,11 +20,11 @@ public partial class MemberPage : ContentPage
         this.ShowPopup(popup);
         popup.Closed += addMember;
     }
-
-    private void addMember(object? sender, PopupClosedEventArgs e)
+    public void addMember(object sender, PopupClosedEventArgs e)
     {
-        MemberData.members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
-            MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
+        if(Member.f)
+            MemberData.members.Add(new Member(MemberData.fullName, MemberData.userName, MemberData.password, MemberData.age,
+                MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
+        Member.f = false;
     }
-
 }

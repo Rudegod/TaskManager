@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager_V0._1.TaskDetails"
+             Title="TaskDetails">
+    <ScrollView>
+            
+        <StackLayout Padding="20" Spacing="10">
+
+            <Label Text="Task Details"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#343a40"/>
+
+            <Label Text="Name : First Task" Margin="0 , 0 , 0 , 20 " />
+            <Label Text="Asign To Erfan Habibi" />
+            <Label Text="Date : 28/10/2024"
+                   Margin="0 , 20  , 0 , 15"
+                         />
+            <Label Text="Cost = 45000$" x:Name="Cost" Margin="0 , 10 , 0 , 20" />
+            <Label Text="Time (2 weeks )" x:Name="Time" Margin=" 0 , 0 , 0 , 10"/>
+            <Label Text="Prerequisite : Nothing" x:Name="Prerequisite" />
+
+            <Label Text="Members Sharing Task : NO collaborators"
+                   Margin="0 , 10 , 0 , 20"
+                   FontAttributes="Bold"
+                   TextColor="#495057"/>
+            <Label
+                Text="which group/s are doing this task : "
+                />
+            <Button Text="group 1"
+                    WidthRequest="150"
+                    Clicked="FirstGroup"
+                    Margin="0 , 20 , 0 , 0"
+                    />
+            <Button Text="Back To Profile"
+                    WidthRequest="150"
+                    HorizontalOptions="End"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="OnBackButtonClicked"
+                    />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

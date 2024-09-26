@@ -38,7 +38,7 @@
             HeightRequest="45"
             Clicked="BackButton"
             HorizontalOptions="CenterAndExpand"
-            Margin="155, 350, 0, 45"
+            Margin="155, 300, 0, 45"
             CornerRadius="35"
             >
         </Button>

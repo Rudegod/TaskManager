@@ -5,5 +5,25 @@
              Title="TaskPage"
              BackgroundColor="#778fd2">
 
-    
+    <ScrollView>
+        <VerticalStackLayout  Padding="20" Background="#778FD2">
+
+            <StackLayout>
+                <SearchBar Placeholder="Search" />
+                <ListView x:Name="TaskList" />
+            </StackLayout>
+            
+            <Button
+                CornerRadius="30"
+                Margin="45, 13, 0, 0" 
+                VerticalOptions="Start"
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                BackgroundColor="#B7CB99"
+                Text="Add Task"
+                Clicked="AddButton"
+                >
+            </Button> 
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -2,9 +2,9 @@ using CommunityToolkit.Maui.Views;
 
 namespace TaskManager_V0._1;
 
-public partial class PopUpPage3 : Popup
+public partial class GroupDetailsPopUp2 : Popup
 {
-	public PopUpPage3()
+	public GroupDetailsPopUp2()
 	{
 		InitializeComponent();
 	}

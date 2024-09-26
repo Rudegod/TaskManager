@@ -3,35 +3,85 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.PeoplePage"
              Title="PeoplePage"
-             BackgroundColor="#778FD2">
- 
-    <StackLayout Padding="20">
-        <Button
-            CornerRadius="30"
+             BackgroundColor="#778fd2">
+    <VerticalStackLayout>
+        <Frame
             BackgroundColor="#B7CB99"
-            Text="Add User"
-            HorizontalOptions="StartAndExpand"
-            TextColor="Black"
-            Margin="45, 13, 0, 0"
-            WidthRequest="90"
-            Clicked=""
-            >
-        </Button>
+            CornerRadius="35"
+            WidthRequest="358"
+            HeightRequest="300"
+            Margin="0, 30, 0, 10">
 
-        <Label Text="Users List" Margin="10 , 10 ,10 ,35" FontSize="24" FontAttributes="Bold"/>
-        <ListView x:Name="UsersListView">
-            <!-- Define item template for users -->
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10" >
-                            <Label Text="{Binding DisplayText}"
-                               FontSize="15"
-                               FontAttributes="Bold" />
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+
+            <CollectionView
+                x:Name="membersList"
+                Background="Transparent"
+                HeightRequest="700">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding fullName}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding userName}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding password}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding nationalcode}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding age}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding gender}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                Margin="20,10,20,10"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="{Binding id}"
+                                TextColor="DarkBlue"
+                                VerticalOptions="StartAndExpand" />
                         </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Frame>
+
+        <Frame
+            BackgroundColor="#B7CB99"
+            CornerRadius="35"
+            WidthRequest="358"
+            HeightRequest="300"
+            Margin="0, 5, 0, 30"
+            >
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+            
+        </Frame>
+    </VerticalStackLayout>
 </ContentPage>
