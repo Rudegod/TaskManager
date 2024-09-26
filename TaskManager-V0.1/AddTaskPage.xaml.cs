@@ -17,6 +17,6 @@ public partial class AddTaskPage : ContentPage
 
     private void okButton(object sender, EventArgs e)
     {
-
+        DisplayAlert("HaHaHa", "its not work hon", "Ok");
     }
 }
