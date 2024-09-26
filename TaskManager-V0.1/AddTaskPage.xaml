@@ -19,43 +19,8 @@
                     WidthRequest="280"
                     HeightRequest="55"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="AssignShowButton"
                     />
-
-            <!-- Popup6 Definition -->
-            <ContentView
-                    x:Name="Popup6"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
-
-                    <StackLayout>
-                        <Label
-                            Text="hiiiiiiiiii"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                        <Label
-                            Text="tfcutgcfjyucfjgtfv all members..."
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                        <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="AssignCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
-
+            
             <!-- Deadline Entry -->
             <Frame
                     Margin="0, 15, 0, 15"
@@ -63,7 +28,7 @@
                     WidthRequest="280"
                     HeightRequest="55"
                     BackgroundColor="#B7CB99">
-                    <DatePicker
+                <DatePicker
                         x:Name="DateOfBirthPicker"
                         TextColor="Black"
                         FontSize="22"
@@ -71,7 +36,7 @@
                         WidthRequest="210"
                         HorizontalOptions="CenterAndExpand"
                         />
-                </Frame>
+            </Frame>
 
             <!-- Time Entry -->
             <Frame
@@ -111,56 +76,21 @@
                     WidthRequest="210"
                     HorizontalOptions="CenterAndExpand"
                     />
-                </Frame>
-            
+            </Frame>
+
             <!-- Prerequisites PopUp -->
             <Button 
-                    Text="Prerequisites"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
-                    TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="PreShowButton"
-                    />
+                Text="Prerequisites"
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                BackgroundColor="#B7CB99"
+                TextColor="Black"
+                FontSize="22"
+                WidthRequest="280"
+                HeightRequest="55"
+                HorizontalOptions="CenterAndExpand"
+                />
 
-            <!-- Popup Definition -->
-            <ContentView
-                    x:Name="Popup"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
-                    
-                    <StackLayout>
-                        <Label
-                            Text="Prerequisites Page"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                        <Label
-                            Text="here should be the list of all tasks"
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                        <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="PreCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
-            
             <!-- Couple PopUp -->
             <Button 
                  Text="Couple"
@@ -172,42 +102,7 @@
                  WidthRequest="280"
                  HeightRequest="55"
                  HorizontalOptions="CenterAndExpand"
-                 Clicked="CouShowButton"
                  />
-
-            <!-- Popup2 Definition -->
-            <ContentView
-                    x:Name="Popup2"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
-
-                    <StackLayout>
-                        <Label
-                            Text="Couple Page"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                        <Label
-                            Text="here should be the list of all tasks..."
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                        <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="CouCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
 
             <!-- Manager PopUp -->
             <Button 
@@ -220,42 +115,7 @@
                     WidthRequest="280"
                     HeightRequest="55"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="ManagerShowButton"
                     />
-
-            <!-- Popup3 Definition -->
-            <ContentView
-                    x:Name="Popup3"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
-
-                    <StackLayout>
-                        <Label
-                            Text="Couple Page"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                        <Label
-                            Text="here should be the list of all members..."
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                        <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="ManagerCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
 
             <!-- Previous PopUp -->
             <Button 
@@ -268,42 +128,7 @@
                     WidthRequest="280"
                     HeightRequest="55"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="PreviousShowButton"
                     />
-
-            <!-- Popup4 Definition -->
-            <ContentView
-                    x:Name="Popup4"
-                    IsVisible="False"
-                    BackgroundColor="#778FD2"
-                    Padding="40"
-                    HorizontalOptions="Fill"
-                    Margin="0, 0, 0, 0"
-                    >
-
-                <StackLayout>
-                    <Label
-                            Text="PreviousTask"
-                            FontSize="22"
-                            TextColor="Black"
-                            HorizontalTextAlignment="Center"
-                            Margin="0, 0, 0, 15"
-                            />
-                    <Label
-                            Text="here should be the list of all members..."
-                            FontSize="15"
-                            TextColor="Black"
-                            />
-                    <Button
-                            Text="Close"
-                            TextColor="White"
-                            CornerRadius="20"
-                            HorizontalOptions="EndAndExpand"
-                            BackgroundColor="#431D32"
-                            Clicked="PreviousCloseButton"
-                            />
-                    </StackLayout>
-                </ContentView>
 
             <!-- Dec.. Entry -->
             <Frame
@@ -350,7 +175,7 @@
                 HorizontalOptions="CenterAndExpand"/>
 
             <!-- Ok Button -->
-            <!-- <Button
+            <Button
                 Text="OK"
                 Margin="0, 0, 45, 15"
                 CornerRadius="30"
@@ -359,10 +184,9 @@
                 BackgroundColor="#778FD2"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="EndAndExpand"
-                Clicked="OKButton"
-                /> -->
-            
-            <!-- 6:13 PM   9/23 -->
+                Clicked="okButton"
+                />
+
         </StackLayout>
     </ScrollView>
 </ContentPage>
