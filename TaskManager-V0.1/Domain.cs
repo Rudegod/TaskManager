@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace TaskManager_V0._1
 {
-    internal class Domain
+    public class Domain
     {
         private static int counter = 1;
-        private int id;
-        private string name;
-        private int parentID;
-        private List<Member> members;
-        private List<Group> groups;
+        public int id;
+        public string name;
+        public int parentID;
+        public List<Group> groups;
         public Domain() {
 
             this.id = ++counter;
             this.name = "forExample";
             this.parentID = 0;
-
+            this.groups = new List<Group>();
         }
     }
 }
