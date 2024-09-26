@@ -34,4 +34,9 @@ public partial class PeoplePage : ContentPage
                 MemberData.gender, MemberData.phone, MemberData.nationalCode, MemberData.active));
         Member.f = false;
     }
+
+    private void Profile(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new ProfiePage());
+    }
 }
