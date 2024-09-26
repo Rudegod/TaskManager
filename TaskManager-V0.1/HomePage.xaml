@@ -5,42 +5,9 @@
              Title="Task Manager"
              BackgroundColor="#2A3759">
 
-    
+
     <StackLayout>
-
-
-        <StackLayout>
-            <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnMainAreaTapped"/>
-            </StackLayout.GestureRecognizers>
-
-            <!-- Main content goes here -->
-            <Label Text="Main Content Area" 
-                   HorizontalOptions="Center" 
-                   VerticalOptions="Center" 
-                   FontSize="24"/>
-        </StackLayout>
-
-        <!-- Side menu -->
-        <Button x:Name="HamburgerButton" Margin="5, 20, 0, 0" Text="☰" Clicked="OnHamburgerMenuClicked" 
-                BackgroundColor="#007AFF" HeightRequest="50" WidthRequest="50" 
-                HorizontalOptions="Start" VerticalOptions="Start" 
-                CornerRadius="25" TextColor="White"/>
-
-        <!-- Side menu layout -->
-        <StackLayout x:Name="OnHamburger" IsVisible="False" Spacing="15" 
-                     BackgroundColor="#FFFFFF" Padding="10" 
-                     HorizontalOptions="Start" VerticalOptions="Fill"
-                     >
-            <Label Text="Menu" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Button Text="Home" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Profile" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Settings" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Help" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Logout" BackgroundColor="#F0F0F0" TextColor="#333"/>
-        </StackLayout>
-
-
+        
         <Label
             Text="Home"
             TextColor="#FFFFFF"
