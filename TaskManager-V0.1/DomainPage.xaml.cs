@@ -1,8 +1,8 @@
 namespace TaskManager_V0._1;
 
-public partial class DomainePage : ContentPage
+public partial class DomainPage : ContentPage
 {
-	public DomainePage()
+	public DomainPage()
 	{
         InitializeComponent();
 	}

@@ -79,6 +79,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="DomainPage.xaml.cs">
+	    <DependentUpon>DomainPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="HomePage.xaml.cs">
 	    <DependentUpon>HomePage.xaml</DependentUpon>
 	  </Compile>
@@ -112,7 +115,7 @@
 	  <MauiXaml Update="AddTaskPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DomainePage.xaml">
+	  <MauiXaml Update="DomainPage.xaml">
 
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
