@@ -18,63 +18,72 @@
                 </Frame.GestureRecognizers>
 
                 <CollectionView
-            x:Name="membersList"
-            Background="Transparent"
-            HeightRequest="300">
+                    x:Name="membersList"
+                    Background="Transparent"
+                    HeightRequest="300">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Padding="10">
-                                <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150" Margin="20">
-                                    <ImageButton
-                                Source="taskpagephoto.jpg"
-                                WidthRequest="130"
-                                HeightRequest="100"
-                                        Clicked="Profile"
-                                />
-                                </Frame>
-                                <Label
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Delete"
+                                    BackgroundColor="Red"
+                                    Invoked="OnSwipeItemInvoked" />
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+
+                                <StackLayout Padding="10">
+                                    <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150" Margin="20">
+                                        <ImageButton
+                            Source="taskpagephoto.jpg"
+                            WidthRequest="130"
+                            HeightRequest="100"
+                            Clicked="Profile" />
+                                    </Frame>
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding fullName}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                                <Label
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding userName}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                                <Label
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding password}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                                <Label
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding nationalCode}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                                <Label
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding age}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                                <Label
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding gender}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                                <Label
+                                    <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
                         Text="{Binding id}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
-                            </StackLayout>
+                                </StackLayout>
+                            </SwipeView>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>

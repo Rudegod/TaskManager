@@ -85,15 +85,6 @@
 	  <Compile Update="AddGroupPage.xaml.cs">
 	    <DependentUpon>AddGroupPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="PopUpPage3.xaml.cs">
-	    <DependentUpon>PopUpPage3.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="PopUpPage.xaml.cs">
-	    <DependentUpon>PopUpPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="PopUpPage2.xaml.cs">
-	    <DependentUpon>PopUpPage2.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 	
 	<ItemGroup>
@@ -130,24 +121,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PeoplePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage3.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage2.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage4.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage5.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage6.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SmsPage.xaml">

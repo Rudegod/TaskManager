@@ -35,6 +35,17 @@ public partial class PeoplePage : ContentPage
         Member.f = false;
     }
 
+    private void OnSwipeItemInvoked(object sender, EventArgs e)
+    {
+        var swipeItem = (SwipeItem)sender;
+        var memberToDelete = (Member)swipeItem.BindingContext;
+
+        if (memberToDelete != null)
+        {
+            MemberData.members.Remove(memberToDelete); // Remove the member from the collection
+        }
+    }
+
     private void Profile(object sender, EventArgs e)
     {
         Navigation.PushModalAsync(new ProfiePage());
