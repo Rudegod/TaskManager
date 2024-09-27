@@ -5,10 +5,10 @@ namespace TaskManager_V0._1;
 public partial class addMemberPopup : Popup
 {
     private bool f = true;
-	public addMemberPopup()
-	{
-		InitializeComponent();
-	}
+    public addMemberPopup()
+    {
+        InitializeComponent();
+    }
 
     private void addMember()
     {
@@ -33,7 +33,8 @@ public partial class addMemberPopup : Popup
         else
             nameError.IsVisible = false;
 
-        if (UserNameEntry is null || checkUsernameExist(UserNameEntry.Text)) {
+        if (UserNameEntry is null || checkUsernameExist(UserNameEntry.Text))
+        {
             usernameError.IsVisible = true;
             f = false;
         }
@@ -48,13 +49,13 @@ public partial class addMemberPopup : Popup
         else
             passwordError.IsVisible = false;
 
-        if(AgeEntry.Text is null)
+        if (AgeEntry.Text is null)
         {
             ageError.IsVisible = true;
             f = false;
         }
         else
-            ageError.IsVisible= false;
+            ageError.IsVisible = false;
 
         if (PhoneEntry.Text is null)
         {
@@ -100,16 +101,16 @@ public partial class addMemberPopup : Popup
 
     private bool checkPassword()
     {
-        if(PasswordEntry.Text is null)
+        if (PasswordEntry.Text is null)
             return false;
-        if(PasswordEntry.Text.Length < 8)
+        if (PasswordEntry.Text.Length < 8)
             return false;
         bool one = false, two = false, three = false, four = false;
-        foreach (char c in PasswordEntry.Text) 
+        foreach (char c in PasswordEntry.Text)
         {
-            if(char.IsUpper(c))
+            if (char.IsUpper(c))
                 one = true;
-            if(char.IsLower(c))
+            if (char.IsLower(c))
                 two = true;
             if (char.IsDigit(c))
                 three = true;
@@ -119,7 +120,7 @@ public partial class addMemberPopup : Popup
             return true;
         }
         return false;
-    
+
     }
 
     public bool checkUsernameExist(string userName)
@@ -140,13 +141,14 @@ public partial class addMemberPopup : Popup
     {
         var picker = (Picker)sender;
         var selectedItem = (string)picker.SelectedItem;
-        if (selectedItem == "male") {
+        if (selectedItem == "male")
+        {
             MemberData.gender = true;
         }
         else
             MemberData.gender = false;
     }
-       
+
 
     private void activeOptionPicker(object sender, EventArgs e)
     {
@@ -164,5 +166,43 @@ public partial class addMemberPopup : Popup
     {
         Member.f = false;
         Close();
+    }
+    private async void OnChooseProfileClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            var fileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>()
+            {
+                { DevicePlatform.iOS, new[] { "public.image" } }, // iOS image types
+                { DevicePlatform.Android, new[] { "image/*" } }, // Android image types
+                { DevicePlatform.WinUI, new[] { ".jpg", ".jpeg", ".png", ".gif", ".bmp" } } // Windows image types
+            });
+
+            // Open the file picker with specified file types
+            var result = await FilePicker.PickAsync(new PickOptions
+            {
+                PickerTitle = "Pick an Image",
+                FileTypes = fileTypes
+            });
+
+            if (result != null)
+            {
+                // Get the file's path
+                var filePath = result.FullPath;
+                // You can also access the file's stream if needed
+                using (var stream = await result.OpenReadAsync())
+                {
+                    // Process the file stream as needed
+                }
+
+                // Update the label to show the picked file
+                //FileLabel.Text = $"Picked file: {result.FileName}";
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle any exceptions, such as user cancellation
+            //FileLabel.Text = $"Error picking file: {ex.Message}";
+        }
     }
 }

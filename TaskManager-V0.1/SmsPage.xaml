@@ -9,7 +9,7 @@
             CornerRadius="35"
             WidthRequest="150"
             HeightRequest="80"
-            Margin="0, 170, 0, 0"
+            Margin="0, 100, 0, 0"
             HorizontalOptions="Center"
             BackgroundColor="#B7CB99">
             <Label
@@ -21,6 +21,17 @@
                 />
         </Frame>
 
+        <Frame 
+               BackgroundColor="#B7CB99"
+               WidthRequest="200"
+               CornerRadius="40"
+               Margin="0 , 20 , 0 , 0"
+               >
+        <Label x:Name="CountdownLabel"
+               Scale="2"
+               FontSize="24"
+               HorizontalOptions="Center" />
+        </Frame>
         <Frame
             Margin="0, 160, 0, 0"
             WidthRequest="300"

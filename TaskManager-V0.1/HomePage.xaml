@@ -21,8 +21,6 @@
 
             <!-- Side menu layout -->
 
-
-
             <Label
             Text="Home"
             TextColor="#FFFFFF"
@@ -68,14 +66,21 @@
             Clicked="taskButton"/>
         </StackLayout>
         <StackLayout x:Name="OnHamburger" IsVisible="False" Spacing="15" 
-                    BackgroundColor="#FFFFFF" Padding="10" 
-                    HorizontalOptions="Start" VerticalOptions="Fill">
+                     BackgroundColor="DarkGray" Padding="10"
+                     WidthRequest="150"
+                     HorizontalOptions="Start" VerticalOptions="Fill">
             <Label Text="Menu" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Button Text="Home" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Profile" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Settings" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Help" BackgroundColor="#F0F0F0" TextColor="#333"/>
-            <Button Text="Logout" BackgroundColor="#F0F0F0" TextColor="#333"/>
+            <Image
+                Margin="0 , 0 , 0 , 20"
+                Source="taskpagephoto.png"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   />
+            <Button Text="Home" BackgroundColor="#F0F0F0" TextColor="#333" Clicked="HomeButton"/>
+            <Button Text="Profile" BackgroundColor="#F0F0F0" TextColor="#333" Clicked="ProfileButton"/>
+            <Button Text="My Tasks" BackgroundColor="#F0F0F0" TextColor="#333" Clicked="MyTasksButton"/>
+            <Button Text="My Groups" BackgroundColor="#F0F0F0" TextColor="#333" Clicked="MyGroupsButton"/>
+            <Button Text="Inbox" BackgroundColor="#F0F0F0" TextColor="#333" Clicked="InboxButton"/>
         </StackLayout>
     </Grid>
 </ContentPage>
