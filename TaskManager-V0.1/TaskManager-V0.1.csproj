@@ -97,6 +97,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <None Remove="Resources\Images\@Wallpaper_4K3D (9866).jpg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="AddGroup.xaml">

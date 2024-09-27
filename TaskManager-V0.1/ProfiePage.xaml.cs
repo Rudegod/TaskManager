@@ -4,9 +4,10 @@ namespace TaskManager_V0._1;
 
 public partial class ProfiePage : ContentPage
 {
-	public ProfiePage()
+    public ProfiePage()
 	{
 		InitializeComponent();
+        membersList.ItemsSource = MemberData.members;
 	}
 
     private void GroupPopUp(object sender, EventArgs e)

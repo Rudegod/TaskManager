@@ -24,13 +24,14 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="10">
-                                <ImageButton
-                        Source="taskpagephoto.jpg"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        HorizontalOptions="Start"
-                        Clicked="Profile"
-                        />
+                                <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150" Margin="20">
+                                    <ImageButton
+                                Source="taskpagephoto.jpg"
+                                WidthRequest="130"
+                                HeightRequest="100"
+                                        Clicked="Profile"
+                                />
+                                </Frame>
                                 <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
@@ -52,7 +53,7 @@
                                 <Label
                         Margin="20,10,20,10"
                         HorizontalOptions="CenterAndExpand"
-                        Text="{Binding nationalcode}"
+                        Text="{Binding nationalCode}"
                         TextColor="DarkBlue"
                         VerticalOptions="StartAndExpand" />
                                 <Label
