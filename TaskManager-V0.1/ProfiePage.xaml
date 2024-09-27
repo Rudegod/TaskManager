@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.ProfiePage"
              Title="ProfilePage"
-             BackgroundColor="#F5f5f5"
+             BackgroundColor="#778FD2"
              >
     <ScrollView>
         <StackLayout Padding="20" Spacing="15">
@@ -22,18 +22,27 @@
             <Label Text="Software Developer "
                FontSize="15"
                HorizontalOptions="Center"
-               TextColor="#666666"
+               TextColor="DarkSlateGrey"
                HorizontalTextAlignment="Center" />
 
             <!-- Action Buttons -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
                 <Button
                     Text="Edit Profile" 
-                    BackgroundColor="#007AFF" 
+                    BackgroundColor="#2A3759" 
                     TextColor="White" 
                     CornerRadius="20" 
                     WidthRequest="120"
                     Clicked="EditProfileButton"
+                    />
+
+                <Button
+                    Text="Back To Home"
+                    BackgroundColor="#2A3759" 
+                    TextColor="White"
+                    CornerRadius="20" 
+                    WidthRequest="120"
+                    Clicked="BackButton"
                     />
             </StackLayout>
 
@@ -54,20 +63,25 @@
                HorizontalOptions="StartAndExpand"/>
 
             <Button 
-                Text="Group1 "
+                Text="Group1"
+                BackgroundColor="#2A3759" 
                 WidthRequest="100"
                 FontAttributes="Bold"
                 FontSize="16"
                 HorizontalOptions="CenterAndExpand" 
                 Clicked="GroupPopUp"    
                 />
-            <Button Text="Group2 "
+            <Button
+                Text="Group2"
+                BackgroundColor="#2A3759" 
                 WidthRequest="100"
                 FontAttributes="Bold"
                 FontSize="16"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="GroupPopUp2"
                 />
+
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -1,11 +1,9 @@
-namespace TaskManager_V0._1;
-
 using Microsoft.Maui.ApplicationModel;
 using Microsoft.Maui.Controls;
 using System;
 using System.Threading.Tasks;
 
-
+namespace TaskManager_V0._1;
 
 public partial class HomePage : ContentPage
 {
@@ -31,10 +29,6 @@ public partial class HomePage : ContentPage
     private void taskButton(object sender, EventArgs e)
     {
         Navigation.PushAsync(new TaskPage());
-    }
-    private void ProfileButton(object sender, EventArgs e)
-    {
-        Navigation.PushModalAsync(new ProfiePage());
     }
 
     private void OnMainAreaTapped(object sender, TappedEventArgs e)
@@ -68,5 +62,11 @@ public partial class HomePage : ContentPage
         await OnHamburger.TranslateTo(-OnHamburger.Width, 0, 300, Easing.CubicInOut);
         OnHamburger.IsVisible = false;
         _isMenuOpen = false;
+    }
+
+    private void ProfileButton(object sender, EventArgs e)
+    {
+        // Navigation.PushAsync = (new ProfiePage());
+        App.Current.MainPage = new NavigationPage (new ProfiePage());
     }
 }
