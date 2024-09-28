@@ -6,8 +6,7 @@ public partial class SmsPage : ContentPage
 {
     private System.Timers.Timer _timer;
     private DateTime _endTime;
-    private const int CountdownDuration = 120;
-
+    private const int CountdownDuration = 120 ;
     public SmsPage()
 	{
         InitializeComponent();

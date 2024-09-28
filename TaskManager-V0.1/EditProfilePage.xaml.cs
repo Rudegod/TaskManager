@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Core.Extensions;
 using Microsoft.Maui.Storage;
 using System.IO.Enumeration;
 
@@ -55,13 +56,14 @@ public partial class EditProfilePage : ContentPage
                 }
 
                 // Update the label to show the picked file
-                //FileLabel.Text = $"Picked file: {result.FileName}";
+                FileLabel.Text = $"Picked file: {result.FileName}";
+                BackgroundColor.GetByteBlue();
             }
         }
         catch (Exception ex)
         {
             // Handle any exceptions, such as user cancellation
-            //FileLabel.Text = $"Error picking file: {ex.Message}";
+            FileLabel.Text = $"Error picking file: {ex.Message}";
         }
     }
 }

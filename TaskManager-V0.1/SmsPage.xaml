@@ -9,7 +9,7 @@
             CornerRadius="35"
             WidthRequest="150"
             HeightRequest="80"
-            Margin="0, 170, 0, 0"
+            Margin="0, 100, 0, 0"
             HorizontalOptions="Center"
             BackgroundColor="#B7CB99">
             <Label
