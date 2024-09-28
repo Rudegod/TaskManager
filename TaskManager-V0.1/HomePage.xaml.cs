@@ -23,7 +23,7 @@ public partial class HomePage : ContentPage
 
     private void domainButton(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new DomainePage());
+        Navigation.PushAsync(new DomainPage());
     }
 
     private void taskButton(object sender, EventArgs e)

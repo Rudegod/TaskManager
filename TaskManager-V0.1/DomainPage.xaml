@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TaskManager_V0._1.DomainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="DomainePage">
+
+
+    <VerticalStackLayout BackgroundColor="#778FD2">
+        <Frame
+            Margin="0,30,0,10"
+            BackgroundColor="#B7CB99"
+            CornerRadius="35"
+            HeightRequest="300"
+            WidthRequest="358">
+            <StackLayout>
+                <Button Clicked="addSubDomain" />
+                <CollectionView
+                    x:Name="SubDomainList"
+                    Background="Transparent"
+                    HeightRequest="500">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label
+                                    FontSize="15"
+                                    Text="{Binding name}"
+                                    TextColor="Black" />
+                            </ViewCell>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
