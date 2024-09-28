@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mct:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TaskManager_V0._1.ManagerPopup"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:mct ="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+    CanBeDismissedByTappingOutsideOfPopup="False"
+    Size="500, 550">
+
+    <StackLayout
+    Orientation="Horizontal">
+
+        <Button
+            BackgroundColor="#778FD2"
+            HeightRequest="60"
+            WidthRequest="120"
+            CornerRadius="35"
+            Text="Close"
+            TextColor="DarkBlue"
+            Clicked="closeButton"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="EndAndExpand"
+            Margin="0, 10, 10, 10"
+            />
+
+    </StackLayout>
+</mct:Popup>
