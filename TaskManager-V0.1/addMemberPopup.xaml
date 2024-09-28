@@ -59,18 +59,18 @@
             </Picker.ItemsSource>
         </Picker>
         <Label x:Name="activeError" TextColor="Red" IsVisible="False" Text="error"/>
-        <HorizontalStackLayout>
+        <HorizontalStackLayout
+            VerticalOptions="EndAndExpand"
+            Margin="130, 10, 10, 15"
+            >
             <Button
                 CornerRadius="35"
                 BackgroundColor="#778FD2"
                 Clicked="checker"
                 HeightRequest="60"
-                HorizontalOptions="CenterAndExpand"
                 Text="Add"
                 TextColor="DarkBlue"
-                VerticalOptions="EndAndExpand"
                 WidthRequest="120"
-                Margin="20, 10, 10, 0"
                 />
             <Button
                 BackgroundColor="#778FD2"
@@ -78,10 +78,9 @@
                 HeightRequest="60"
                 WidthRequest="120"
                 CornerRadius="35"
-                HorizontalOptions="CenterAndExpand"
                 Text="Close"
                 TextColor="DarkBlue"
-                VerticalOptions="EndAndExpand"
+                Margin="10, 0, 0, 0"
                 />
         </HorizontalStackLayout>
     </StackLayout>

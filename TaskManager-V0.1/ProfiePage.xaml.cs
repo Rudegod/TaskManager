@@ -23,6 +23,11 @@ public partial class ProfiePage : ContentPage
 
     private void EditProfileButton(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync( new EditProfilePage());
+        Navigation.PushModalAsync (new EditProfilePage());
+    }
+
+    private void BackButton(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new HomePage();
     }
 }

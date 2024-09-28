@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManager_V0._1
 {
-    internal class Group
+    public class Group
     {
         private static int counter = 0;
         private int id;

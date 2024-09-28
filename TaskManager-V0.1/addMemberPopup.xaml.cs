@@ -19,7 +19,7 @@ public partial class addMemberPopup : Popup
         MemberData.fullName = FullNameEntry.Text;
         MemberData.userName = UserNameEntry.Text;
         MemberData.password = PasswordEntry.Text;
-        MemberData.age = Convert.ToInt32(AgeEntry.Text);
+        MemberData.age = AgeEntry.Text;
         MemberData.phone = PhoneEntry.Text;
         MemberData.nationalCode = NationalEntry.Text;
         MemberData.PickedImage = profileImagePath;
