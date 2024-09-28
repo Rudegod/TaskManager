@@ -17,6 +17,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
+                            <Image Source="{Binding PickedImage}"/>
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"

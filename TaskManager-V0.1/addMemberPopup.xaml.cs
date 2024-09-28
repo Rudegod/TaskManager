@@ -1,10 +1,14 @@
 using CommunityToolkit.Maui.Views;
-using System.Globalization;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.Maui.ApplicationModel;
 namespace TaskManager_V0._1;
 
 public partial class addMemberPopup : Popup
 {
     private bool f = true;
+    private string profileImagePath;
     public addMemberPopup()
     {
         InitializeComponent();
@@ -18,6 +22,7 @@ public partial class addMemberPopup : Popup
         MemberData.age = Convert.ToInt32(AgeEntry.Text);
         MemberData.phone = PhoneEntry.Text;
         MemberData.nationalCode = NationalEntry.Text;
+        MemberData.PickedImage = profileImagePath;
         Member.f = true;
         f = true;
         Close();
@@ -172,13 +177,12 @@ public partial class addMemberPopup : Popup
         try
         {
             var fileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>()
-            {
-                { DevicePlatform.iOS, new[] { "public.image" } }, // iOS image types
-                { DevicePlatform.Android, new[] { "image/*" } }, // Android image types
-                { DevicePlatform.WinUI, new[] { ".jpg", ".jpeg", ".png", ".gif", ".bmp" } } // Windows image types
-            });
+        {
+            { DevicePlatform.iOS, new[] { "public.image" } },
+            { DevicePlatform.Android, new[] { "image/*" } },
+            { DevicePlatform.WinUI, new[] { ".jpg", ".jpeg", ".png", ".bmp" } }
+        });
 
-            // Open the file picker with specified file types
             var result = await FilePicker.PickAsync(new PickOptions
             {
                 PickerTitle = "Pick an Image",
@@ -188,20 +192,25 @@ public partial class addMemberPopup : Popup
             if (result != null)
             {
                 // Get the file's path
-                var filePath = result.FullPath;
-                // You can also access the file's stream if needed
-                using (var stream = await result.OpenReadAsync())
+                profileImagePath = result.FileName;
+
+                // Save the image to the app's local storage
+                var localFileName = Path.Combine(FileSystem.AppDataDirectory, result.FileName);
+                using (var sourceStream = await result.OpenReadAsync())
+                using (var destinationStream = File.OpenWrite(localFileName))
                 {
-                    // Process the file stream as needed
+                    await sourceStream.CopyToAsync(destinationStream);
                 }
 
                 // Update the label to show the picked file
                 FileLabel.Text = $"Picked file: {result.FileName}";
+
+                // Set the picked image to the Image control
+                PickedImage.Source = localFileName; // Use the local file path
             }
         }
         catch (Exception ex)
         {
-            // Handle any exceptions, such as user cancellation
             FileLabel.Text = $"Error picking file: {ex.Message}";
         }
     }

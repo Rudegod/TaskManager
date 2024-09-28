@@ -36,7 +36,7 @@ namespace TaskManager_V0._1
             f = false;
             counter++;
         }
-        public Member(string fullname, string username, string password, int age, bool gender, string phone, string nationalcode, bool active)
+        public Member(string fullname, string username, string password, string password1, int age, bool gender, string phone, string nationalcode, bool active)
         {
             this.id=counter;
             this.fullName = fullname;
