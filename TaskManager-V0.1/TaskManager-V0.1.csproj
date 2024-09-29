@@ -89,16 +89,22 @@
 	  <Compile Update="AddGroupPage.xaml.cs">
 	    <DependentUpon>AddGroupPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="PopUpPage3.xaml.cs">
-	    <DependentUpon>PopUpPage3.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
-
+	
+	<ItemGroup>
+	  <None Remove="Resources\Images\@Wallpaper_4K3D (9866).jpg" />
+	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="AddGroup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="AddTask.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AssignPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CouplePopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="EditProfilePage.xaml">
@@ -112,12 +118,10 @@
 	  </MauiXaml>
 		<MauiXaml Update="GroupPage.xaml">
 		</MauiXaml>
-
 	  <MauiXaml Update="AddTaskPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DomainPage.xaml">
-
+	  <MauiXaml Update="DomainePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="HomePage.xaml">
@@ -126,13 +130,10 @@
 	  <MauiXaml Update="AddGroupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ManagerPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PeoplePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage3.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPage6.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SmsPage.xaml">
@@ -148,7 +149,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
-
 	<ItemGroup>
 	  <EditorConfigFiles Remove="C:\Users\LENOVO\Downloads\mahdieh\test\TaskManager-V0.1\NewFolder\.editorconfig" />
 	</ItemGroup>

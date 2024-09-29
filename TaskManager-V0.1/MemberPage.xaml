@@ -12,11 +12,12 @@
             x:Name="membersList"
             Background="Transparent"
             HasUnevenRows="True"
-            HeightRequest="700">
+            HeightRequest="300">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
+                            <Image Source="{Binding PickedImage}"/>
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
@@ -38,7 +39,7 @@
                             <Label
                                 Margin="20,10,20,10"
                                 HorizontalOptions="CenterAndExpand"
-                                Text="{Binding nationalcode}"
+                                Text="{Binding nationalCode}"
                                 TextColor="DarkBlue"
                                 VerticalOptions="StartAndExpand" />
                             <Label

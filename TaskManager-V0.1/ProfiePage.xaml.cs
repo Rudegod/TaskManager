@@ -4,9 +4,10 @@ namespace TaskManager_V0._1;
 
 public partial class ProfiePage : ContentPage
 {
-	public ProfiePage()
+    public ProfiePage()
 	{
 		InitializeComponent();
+        membersList.ItemsSource = MemberData.members;
 	}
 
     private void GroupPopUp(object sender, EventArgs e)
@@ -22,6 +23,11 @@ public partial class ProfiePage : ContentPage
 
     private void EditProfileButton(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync( new EditProfilePage());
+        Navigation.PushModalAsync (new EditProfilePage());
+    }
+
+    private void BackButton(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new HomePage();
     }
 }

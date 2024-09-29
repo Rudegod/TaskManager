@@ -10,16 +10,17 @@
 
             <!-- Assign to a person PopUp -->
             <Button 
-                    Text="Assign to a person"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
-                    TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    />
+                Text="Assign to a person"
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                BackgroundColor="#B7CB99"
+                TextColor="Black"
+                FontSize="22"
+                WidthRequest="280"
+                HeightRequest="55"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="assignButton"
+                />
             
             <!-- Deadline Entry -->
             <Frame
@@ -89,46 +90,50 @@
                 WidthRequest="280"
                 HeightRequest="55"
                 HorizontalOptions="CenterAndExpand"
+                Clicked="PreButton"
                 />
 
             <!-- Couple PopUp -->
             <Button 
-                 Text="Couple"
-                 Margin="0, 15, 0, 15"
-                 CornerRadius="35"
-                 BackgroundColor="#B7CB99"
-                 TextColor="Black"
-                 FontSize="22"
-                 WidthRequest="280"
-                 HeightRequest="55"
-                 HorizontalOptions="CenterAndExpand"
+                Text="Couple"
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                BackgroundColor="#B7CB99"
+                TextColor="Black"
+                FontSize="22"
+                WidthRequest="280"
+                HeightRequest="55"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="coupleButton"
                  />
 
             <!-- Manager PopUp -->
             <Button 
-                    Text="Manager"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
-                    TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    />
+                Text="Manager"
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                BackgroundColor="#B7CB99"
+                TextColor="Black"
+                FontSize="22"
+                WidthRequest="280"
+                HeightRequest="55"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="managerButton"
+                />
 
             <!-- Previous PopUp -->
             <Button 
-                    Text="Previous Task"
-                    Margin="0, 15, 0, 15"
-                    CornerRadius="35"
-                    BackgroundColor="#B7CB99"
-                    TextColor="Black"
-                    FontSize="22"
-                    WidthRequest="280"
-                    HeightRequest="55"
-                    HorizontalOptions="CenterAndExpand"
-                    />
+                Text="Previous Task"
+                Margin="0, 15, 0, 15"
+                CornerRadius="35"
+                BackgroundColor="#B7CB99"
+                TextColor="Black"
+                FontSize="22"
+                WidthRequest="280"
+                HeightRequest="55"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="PreviousButton"
+                />
 
             <!-- Dec.. Entry -->
             <Frame

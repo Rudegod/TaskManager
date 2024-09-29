@@ -9,7 +9,7 @@
             CornerRadius="35"
             WidthRequest="150"
             HeightRequest="80"
-            Margin="0, 170, 0, 0"
+            Margin="0, 100, 0, 0"
             HorizontalOptions="Center"
             BackgroundColor="#B7CB99">
             <Label
@@ -21,20 +21,29 @@
                 />
         </Frame>
 
+        <Label
+            x:Name="CountdownLabel"
+            FontAttributes="Bold"
+            Scale="2"
+            FontSize="10"
+            HorizontalOptions="Center"
+            Margin="0, 30, 0, 0"
+           />
+
         <Frame
-            Margin="0, 160, 0, 0"
-            WidthRequest="300"
-            HeightRequest="90"
-            CornerRadius="35"
-            HorizontalOptions="CenterAndExpand"
-            BackgroundColor="#B7CB99">
-            <Entry
-                Margin="0, 0, 0, 0"
-                Placeholder="Enter Code"
-                HorizontalTextAlignment="Center"
-                FontSize="20"
-                PlaceholderColor="Black"
-                />
+        Margin="0, 160, 0, 0"
+        WidthRequest="300"
+        HeightRequest="90"
+        CornerRadius="35"
+        HorizontalOptions="CenterAndExpand"
+        BackgroundColor="#B7CB99">
+        <Entry
+            Margin="0, 0, 0, 0"
+            Placeholder="Enter Code"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            PlaceholderColor="Black"
+            />
         </Frame>
 
         <Button

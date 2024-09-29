@@ -15,9 +15,9 @@
             
             <Button
                 CornerRadius="30"
-                Margin="45, 13, 0, 0" 
+                Margin="45, 13, 45, 0" 
                 VerticalOptions="Start"
-                HorizontalOptions="StartAndExpand"
+                HorizontalOptions="EndAndExpand"
                 TextColor="Black"
                 BackgroundColor="#B7CB99"
                 Text="Add Task"

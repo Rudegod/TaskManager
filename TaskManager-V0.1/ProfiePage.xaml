@@ -3,57 +3,128 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskManager_V0._1.ProfiePage"
              Title="ProfilePage"
-             BackgroundColor="#F5f5f5"
+             BackgroundColor="#778FD2"
              >
-    <ScrollView>
-        <StackLayout Padding="20" Spacing="15">
-            <!-- Profile Picture -->
-            <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150">
-                <Image Source="dotnet_bot.png"/>
-            </Frame>
+    <StackLayout Padding="20" Spacing="15">
+        <CollectionView
+                x:Name="membersList"
+                Background="Transparent"
+                HeightRequest="700">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10">
+                        <!-- Profile Picture -->
+                        <Frame CornerRadius="150" HasShadow="True" Padding="10" WidthRequest="150" HeightRequest="150" Margin="20">
+                            <Image
+                                Source="taskpagephoto.jpg"
+                                WidthRequest="130"
+                                HeightRequest="100"
+                                />
+                        </Frame>
 
-            <!-- User Name -->
-            <Label Text="Erfan Habibi"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+                        <!-- User Name -->
+                        <Label Text="{Binding fullName}"
+                                FontSize="24"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center" 
+                               Margin="0 , 0 , 0 , 10"
+                               />
 
-            <!-- User Bio -->
-            <Label Text="Software Developer "
-               FontSize="15"
-               HorizontalOptions="Center"
-               TextColor="#666666"
-               HorizontalTextAlignment="Center" />
+                        <!-- User Bio -->
+                        <Label 
+                Text="Software Developer "
+                FontSize="15"
+                HorizontalOptions="Center"
+                TextColor="#666666"
+                HorizontalTextAlignment="Center"
+                            Margin="0 , 0 , 0 , 20"/>
 
-            <!-- Action Buttons -->
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                <Button
+                        <!-- Action Buttons -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                            <Button
                     Text="Edit Profile" 
-                    BackgroundColor="#007AFF" 
+                    BackgroundColor="#2A3759" 
                     TextColor="White" 
                     CornerRadius="20" 
                     WidthRequest="120"
                     Clicked="EditProfileButton"
+                               
+                    />
+                        </StackLayout>
+
+                <Button
+                    Text="Back To Home"
+                    BackgroundColor="#2A3759" 
+                    TextColor="White"
+                    CornerRadius="20" 
+                    WidthRequest="120"
+                    Clicked="BackButton"
                     />
             </StackLayout>
 
-            <!-- Divider -->
-            <BoxView HeightRequest="1" Color="#D3D3D3" />
+                        <!-- Divider -->
+                        <BoxView 
+                            HeightRequest="1" 
+                            Color="#D3D3D3"
+                            Margin="0 , 20 , 0 , 30"
+                                 />
+                        
+                        <HorizontalStackLayout Margin="0 , 0 , 0 ,20">
+                        <Label 
+                            Text="User Name : "
+                            TextColor="DarkBlue"
+                            />
+                        <Label
+            HorizontalOptions="Start"
+            Text="{Binding userName}"
+            TextColor="DarkBlue"
+            VerticalOptions="Start" />
+                        </HorizontalStackLayout>
+                        
+                        <HorizontalStackLayout Margin="0 , 0 , 0 , 20">
+                            <Label
+                                Text="Pssword : "
+                                TextColor="DarkBlue" />
+                            <Label
+            HorizontalOptions="Start"
+            Text="{Binding password}"
+            TextColor="DarkBlue" />
+                        </HorizontalStackLayout>
 
-            <!-- Additional Info -->
-            <Label Text="Email: erfan@gmail.com"
-               FontSize="16"
-               HorizontalOptions="Start" />
+                        <HorizontalStackLayout Margin="0 , 0 , 0 , 20">
+                            <Label
+                                Text="NationalCode is : "
+                                TextColor="DarkBlue"
+                                />
+                            <Label
+            HorizontalOptions="Start"
+            Text="{Binding nationalCode}"
+            TextColor="DarkBlue"/>
+                        </HorizontalStackLayout>
 
-            <Label Text="Phone: 09303999827"
-               FontSize="16"
-               HorizontalOptions="Start" />
+                        <HorizontalStackLayout Margin="0 , 0 , 0 , 20">
+                            <Label
+                                Text="Age : "
+                                TextColor="DarkBlue" />
+                            <Label
+            HorizontalOptions="Start"
+            Text="{Binding age}"
+            TextColor="DarkBlue" />
+                        </HorizontalStackLayout>
 
-            <Label Text="Groups :"
-               FontSize="16"
-               HorizontalOptions="StartAndExpand"/>
-
-            <Button 
+                        <HorizontalStackLayout Margin="0 , 0 , 0 , 30">
+                            <Label
+        Text="Gender : "
+        TextColor="DarkBlue" />
+                            <Label
+            HorizontalOptions="Start"
+            Text="{Binding gender}"
+            TextColor="DarkBlue"
+            VerticalOptions="StartAndExpand" />
+                        </HorizontalStackLayout>
+                        
+                        <Button
+                            Margin="0 , 0 , 0 , 20"
                 Text="Group1 "
                 WidthRequest="100"
                 FontAttributes="Bold"
@@ -61,13 +132,19 @@
                 HorizontalOptions="CenterAndExpand" 
                 Clicked="GroupPopUp"    
                 />
-            <Button Text="Group2 "
+                        <Button Text="Group2 "
                 WidthRequest="100"
                 FontAttributes="Bold"
                 FontSize="16"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="GroupPopUp2"
                 />
-        </StackLayout>
-    </ScrollView>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Additional Info -->
+
+    </StackLayout>
 </ContentPage>
