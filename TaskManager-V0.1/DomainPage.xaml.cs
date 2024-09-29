@@ -7,11 +7,8 @@ public partial class DomainPage : ContentPage
 	{
         InitializeComponent();
         SubDomainList.ItemsSource = mainDomain.subDomains;
-        
         DomainData.domains.Add(mainDomain);
         mainDomain.subDomains.Add(new Domain());
-        
-        
     }
 
     private void addSubDomain(object sender, EventArgs e)

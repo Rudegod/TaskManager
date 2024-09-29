@@ -17,7 +17,7 @@ public partial class HomePage : ContentPage
         // Set initial position of the menu off-screen
         OnHamburger.TranslationX =- OnHamburger.Width;
     }
-
+    Label label = new Label { Text = "salam", TextColor = Colors.Red};
     private void peopleButton(object sender, EventArgs e)
     {
         Navigation.PushAsync(new PeoplePage());
